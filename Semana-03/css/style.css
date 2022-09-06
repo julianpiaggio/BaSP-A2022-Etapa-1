@@ -40,6 +40,10 @@ aside a {
     list-style-type: none;
     color: #479679;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
 aside img {
     margin-top: 70px ;
 }
@@ -107,4 +111,123 @@ footer {
     height: 50px;
     margin: 200px 0px;
     text-align: center;
+}
+.titu {
+    position: relative;
+    bottom: 70px;
+    left: 20px;
+    text-align: center;
+}
+.welcome-title {
+    position: relative;
+    left: 430px;
+    top: 30px;
+    background-color: #AACE9B ;
+    border-radius: 8px;
+    border: grey solid 3px;
+    height: 50px;
+    width: 200px;
+    filter: blur(3px);
+}
+.welcome {
+    background-color: rgba(222, 239, 241, 1); 
+    background-image: linear-gradient(rgba(222, 239, 241, 1), white);
+    height: 500px;
+}
+.welcome p {
+    position: absolute;
+    top: 240px;
+    right: 600px;
+    font-size: 22px;
+}
+.imagen-seccion-1 {
+    width: 500px;
+    position: absolute;
+    right: 10px;
+    top: 160px;
+}
+.application {
+    height: 550px;
+}
+.div-apli {
+    position: relative;
+    left: 150px;
+    top: 50px;
+    background-color: rgba(170, 206, 155, 0.3);
+    width: 170px;
+    height: 180px;
+}
+.div-aplica {
+    position: relative;
+    left: 500px;
+    background-color: rgba(170, 206, 155, 0.3);
+    width: 170px;
+    height: 180px;
+}
+.div-apli1 {
+    position: relative;
+    bottom: 150px;
+    left: 150px;
+    background-color: rgba(170, 206, 155, 0.3);
+    width: 170px;
+    height: 180px;
+}
+.div-aplicado {
+    position: relative;
+    left: 500px;
+    background-color: rgba(170, 206, 155, 0.3);
+    width: 170px;
+    height: 180px;
+}
+.multiple {
+    position: relative;
+    bottom: 400px;
+}
+.imagen-seccion-2 {
+    width: 150px;
+}
+.seccion-2 {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    bottom: 200px;
+    left: 165px;
+}
+.seccion-2-abajo {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    bottom: 390px;
+    left: 165px;
+}
+.seccion-2-der {
+    display: inline-block;
+    margin-top: 50px;
+    width: 45%;
+    position: relative;
+    bottom: 200px;
+    left: 185px;
+}
+.multiple {
+    position: relative;
+    bottom: 400px;
+}
+.parrafo-seccion-hours {
+    padding-left: 30px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.parrafo-seccion-2-resource {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.parrafo-seccion-reports {
+    padding-left: 50px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.parrafo-seccion-2-multiple {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 20px;
 }
