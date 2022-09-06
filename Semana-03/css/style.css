@@ -112,6 +112,13 @@ footer {
     margin: 200px 0px;
     text-align: center;
 }
+.linea {
+    border-top: 1px solid black;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 90%;
+}
 .titu {
     position: relative;
     bottom: 70px;
@@ -230,4 +237,184 @@ footer {
     padding-left: 20px;
     font-size: 20px;
     margin-bottom: 20px;
+}
+.why-should {
+    height: 600px;
+}
+.seccion-3-1 {
+    display: inline-block;
+    width: 45%;
+}
+.productivity {
+    margin: 50px 0px 30px 0px ;
+    font-size: 26px;
+}
+.pro {
+    position: relative;
+    left: 185px;
+    top: 50px;
+}
+.work {
+    position: relative;
+    left: 145px;
+    top: 50px;
+}
+.leader {
+    position: relative;
+    left: 175px;
+    top: 50px;
+}
+.decision {
+    position: relative;
+    left: 145px;
+    top: 50px;
+}
+.seccion-3-1-parrafo  {
+    display: inline-block;
+    position: relative;
+    bottom: 40px;
+    width: 200px;
+    padding-left: 30px;
+}
+.seccion-3-2 {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    left: 240px;
+}
+.seccion-3-2-parrafo {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    bottom: 60px;
+}
+.seccion-3-3 {
+    display: inline-block;
+    width: 45%;
+}
+.seccion-3-3-parrafo {
+    display: inline-block;
+    position: relative;
+    width: 280px;
+    padding-left: 20px;
+    top: 10px;
+}
+.seccion-3-4 {
+    display: inline-block;
+    width: 45%;
+    position: relative;
+    left: 215px;
+}
+.seccion-3-4-parrafo {
+    display: inline-block;
+    position: relative;
+    width: 150px;
+    padding-left: 20px;
+    bottom: 40px;
+}
+.imagen-seccion-3 {
+    width: 200px;
+}
+.inscription-text {
+    width: 45%;
+    margin-right: 18px;
+    margin-top: 30px;
+    height: 15px;
+    padding: 10px;
+    border: grey solid 1px;
+}
+.inscription-text-area {
+    display: block;
+    width: 94%;
+    margin: 30px 0px;
+    padding: 10px;
+    border: black solid 1px;
+}
+form article p {
+    display: inline-block;
+}
+.inscription-checkbox-1 {
+    position: relative;
+    left: 50%;
+}
+.checkbox-1 {
+    position: relative;
+    left: 50%;
+}
+label {
+    display: block;
+    margin-top: 30px;
+}
+textarea {
+    height: 170px;
+    width: 95%;
+    border: grey solid 1px;
+    margin-top: 10px;
+}
+.company {
+    height: 800px;
+}
+.company-gradient {
+    background-color: rgba(222, 239, 241, 1);
+    background-image: linear-gradient(rgba(222, 239, 241, 1), white);
+}
+.logo-company {
+    position: relative;
+    left: 85%;
+    bottom: 40px;
+    width: 120px;
+}
+.company-where {
+    position: relative;
+    bottom: 100px;
+    margin: 0%;
+    font-size: 32px;
+    color: #373867;
+    font-weight: 600;
+}
+.company-where-2 {
+    position: relative;
+    bottom: 70px;
+    text-align: right;
+    right: 150px;
+    margin: 0%;
+    color: black;
+    font-weight: bold;
+}
+.company-parrafo-centrado {
+    text-align: center;
+}
+.company-parrafo-izq {
+    text-align: left;
+}
+.hear {
+    bottom: 0px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+.company-coments {
+    background-color: rgba(217, 217, 217, 0.2);
+    height: 70px;
+    margin-top: 30px;
+}
+.company-coments-parrafo1 {
+    padding: 15px 0px 0px 30px;
+}
+.company-coments-parrafo2 {
+    text-align: right;
+    padding-right: 10px;
+}
+.about-us {
+    display: inline-block;
+    width: 45%;
+    margin-top: 30px;
+}
+.imagen-seccion-company{
+    width: 350px;
+    position: relative;
+    left: 230px;
+    top: 25px;
+}
+.about-us-parrafo {
+    color: #373867;
 }
