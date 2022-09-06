@@ -418,3 +418,118 @@ textarea {
 .about-us-parrafo {
     color: #373867;
 }
+.our-products {
+    height: 850px;
+}
+.our-products-article {
+    display: inline-block;
+    width: 45%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.our-products-article-1 {
+    width: 300px;
+    margin-left: 120px;
+    text-align: left;
+}
+.our-products-article-1-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.our-products ul {
+    margin-top: 15px;
+}
+.our-products ul li {
+    list-style-type: none;
+    margin-top: 5px;
+}
+.companies {
+    height: 750px;
+}
+.imagen-seccion-companies-1 {
+    width: 300px;
+}
+.imagen-seccion-companies-2 {
+    width: 300px;
+}
+.divi {
+    display: inline-block;
+    width: 60%;
+    position: relative;
+    bottom: 70px;
+    margin-left: 100px;
+}
+.divi1 {
+    display: inline-block;
+    width: 60%;
+    position: relative;
+    right: 250px;
+    bottom: 40px;
+}
+.imagen-seccion-companies-2 {
+    position: relative;
+    left: 700px;
+}
+.companies-title-parrafo {
+    font-size: 28px;
+    font-weight: bold;
+}
+.companies-title {
+    margin-bottom: 50px;
+}
+.support-article {
+    display: inline-block;
+    width: 45%;
+}
+.support-derecha {
+    position: relative;
+    left: 200px;
+}
+.imagen-seccion-support {
+    width: 350px;
+    height: 250px;
+}
+.parrafo-izq {
+    display: inline-block;
+    width: 300px;
+    text-align:center;
+    margin-left: 10px;
+}
+.parrafo-der {
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    text-align:center;
+}
+.support-tutorial {
+    font-weight: bolder;
+    font-size: 24px;
+}
+.support-tutorial-title {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.tutorial-button {
+    background-color: #950033;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+  }
+.tutorial-button a {
+    color: white;
+    font-weight: bold;
+}
+.article-button {
+    margin-top: 50px;
+    text-align: center;
+}
+.icono-footer {
+    width: 50px;
+}
