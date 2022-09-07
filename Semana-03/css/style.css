@@ -1,17 +1,21 @@
+html,body {
+    overflow-x: hidden;
+}
+
 body {
-    font-family: 'roboto';
+    font-family: 'Roboto', sans-serif;
     margin: 0%;
 }
 header {
     position: fixed;
     z-index: 1;
-    width: 100%;
+    width: 1512px;
     height: 50px;
     background-color: #373867;
     padding: 8px;
 }
 h1 {
-    width: 90%;
+    width: 1512px;
     text-align: center;
     color: #46A07B;
     margin: 0%;
@@ -24,13 +28,18 @@ header img {
 aside {
     position: fixed;
     z-index: 1;
-    width: 15%;
+    width: 250px;
     height: 100%;
     background-color: rgba(159, 159, 168, 0.5);
     font-size: 22px;
     line-height: 50px;
     text-align: center;
     margin-top: 60px;
+}
+aside input {
+    position: relative;
+    bottom: 50px;
+    width: 200px;
 }
 aside ul {
     padding: 0%;
@@ -48,8 +57,8 @@ aside img {
     margin-top: 70px ;
 }
 aside h4 {
-    color: #373867;
     margin: 0%;
+    color: #373867;
 }
 aside p {
     margin: 0%;
@@ -59,12 +68,12 @@ nav {
     position: fixed;
     z-index: 1;
     top: 65px;
-    width: 90%;
-    left: 15%;
-    background-color: #373867;
+    width: 1262px;
+    left: 250px;
     height: 50px;
     text-align: center;
     font-size: 22px;
+    background-color: #373867;
 }
 nav button {
     background-color: #373867;
@@ -76,8 +85,8 @@ nav a {
 }
 nav ul li {
     display: inline-block;
-    height: 30px;
     position: relative;
+    height: 30px;
     top: 10px;
     color:#46A07B;
 }
@@ -86,16 +95,16 @@ h2 {
     bottom: 30px;
     text-align: center;
     font-size: 48px;
-    font-weight: 400;
     color:#373867;
+    font-weight: 400;
 }
 h3 {
     font-size: 32px;
     margin-top: 30px;
 }
 main {
-    width: 70%;
     position: relative;
+    width: 1100px;
     top: 0;
     left: 20%;
     top: 150px;
@@ -112,28 +121,34 @@ label {
 }
 textarea {
     height: 170px;
-    width: 95%;
+    width: 900px;
     border: grey solid 1px;
     margin-top: 10px;
 }
 footer {
     position: absolute;
-    background-color: #373867;
-    width: 80%;
-    left: 16%;
+    width: 1262px;
+    left: 250px;
     height: 50px;
     margin: 200px 0px;
     text-align: center;
+    background-color: #373867;
 }
 footer p {
     margin: 20px 0px;
 }
+
+.iconAside {
+    position: relative;
+    bottom: 47px;
+    right: 30px;
+}
 .sectionDividingLine {
-    border-top: 1px solid black;
     height: 2px;
     padding: 0;
     margin: 20px auto 0 auto;
-    width: 90%;
+    width: 1262px;
+    border-top: 1px solid black;
 }
 .titleHeader {
     position: relative;
@@ -143,19 +158,19 @@ footer p {
 }
 .firstSectionMainTitle {
     position: relative;
-    left: 430px;
+    left: 450px;
     top: 30px;
-    background-color: #AACE9B ;
     border-radius: 8px;
     border: grey solid 3px;
     height: 50px;
     width: 200px;
     filter: blur(3px);
+    background-color: #AACE9B ;
 }
 .firstSectionMain {
+    height: 500px;
     background-color: rgba(222, 239, 241, 1); 
     background-image: linear-gradient(rgba(222, 239, 241, 1), white);
-    height: 500px;
 }
 .firstSectionMain p {
     position: absolute;
@@ -164,8 +179,8 @@ footer p {
     font-size: 22px;
 }
 .imageWelcome {
-    width: 500px;
     position: absolute;
+    width: 500px;
     right: 10px;
     top: 160px;
 }
@@ -176,31 +191,31 @@ footer p {
     position: relative;
     left: 150px;
     top: 50px;
-    background-color: rgba(170, 206, 155, 0.3);
     width: 170px;
     height: 180px;
+    background-color: rgba(170, 206, 155, 0.3);
 }
 .secondSectionMainBackgroundImage {
     position: relative;
     left: 500px;
-    background-color: rgba(170, 206, 155, 0.3);
     width: 170px;
     height: 180px;
+    background-color: rgba(170, 206, 155, 0.3);
 }
 .secondSectionMainBackgroundSame {
     position: relative;
     bottom: 150px;
     left: 150px;
-    background-color: rgba(170, 206, 155, 0.3);
     width: 170px;
     height: 180px;
+    background-color: rgba(170, 206, 155, 0.3);
 }
 .secondSectionMainBackgroundImageSame {
     position: relative;
     left: 500px;
-    background-color: rgba(170, 206, 155, 0.3);
     width: 170px;
     height: 180px;
+    background-color: rgba(170, 206, 155, 0.3);
 }
 .multiple {
     position: relative;
@@ -209,52 +224,61 @@ footer p {
 .imageMain {
     width: 150px;
 }
+
+.imageMainOurProducts {
+    width: 250px;
+}
+
 .articleHoursLog {
     display: inline-block;
-    width: 45%;
     position: relative;
+    width: 465px;
     bottom: 200px;
     left: 165px;
 }
 .articleResourceManagement {
     display: inline-block;
-    width: 45%;
     position: relative;
+    width: 465px;
     bottom: 390px;
     left: 165px;
 }
 .articleReports {
     display: inline-block;
-    margin-top: 50px;
-    width: 45%;
     position: relative;
+    margin-top: 50px;
+    width: 465px;
     bottom: 200px;
     left: 185px;
 }
 
 .articleMultipleRoles {
     display: inline-block;
-    margin-top: 50px;
-    width: 45%;
     position: relative;
+    margin-top: 50px;
+    width: 465px;
     bottom: 400px;
     left: 185px;
 }
 .articleHoursLogParagraph {
     padding-left: 30px;
-    margin-bottom: 20px;
+    margin-bottom: 42px;
     font-size: 20px;
 }
 .articleResourceManagementParagraph {
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
 .articleReportsParagraph {
+    position: relative;
+    bottom: 20px;
     padding-left: 50px;
     font-size: 20px;
     margin-bottom: 20px;
 }
 .articleMultipleRolesParagraph {
+    position: relative;
+    bottom: 10px;
     padding-left: 20px;
     font-size: 20px;
     margin-bottom: 20px;
@@ -264,11 +288,50 @@ footer p {
 }
 .articleProductivityBooster {
     display: inline-block;
-    width: 45%;
+    position: relative;
+    left: 20px;
+    bottom: 200px;
+    width: 465px;
 }
 .articleProductivityBoosterTitle {
-    margin: 50px 0px 30px 0px ;
+    margin: 50px 0px 30px 10px ;
     font-size: 26px;
+}
+.articleProductivityBoosterBackground {
+    position: relative;
+    top: 75px;
+    left: 5px;
+    height: 170px;
+    width: 170px;
+    rotate: 50deg;
+    background-color: rgba(170, 206, 155, 0.7);
+}
+.articleWorkTracebilityBackground {
+        position: relative;
+        bottom: 350px;
+        left: 600px;
+        height: 170px;
+        width: 170px;
+        rotate: 50deg;
+        background-color: rgba(170, 206, 155, 0.7);
+}
+.articleLeadershipAndTeamManagementBackground {
+    position: relative;
+    bottom: 500px;
+    left: 5px;
+    height: 170px;
+    width: 170px;
+    rotate: 50deg;
+    background-color: rgba(170, 206, 155, 0.7);
+}
+.articleDecisionMakingBackground {
+    position: relative;
+    bottom: 940px;
+    left: 600px;
+    height: 170px;
+    width: 170px;
+    rotate: 50deg;
+    background-color: rgba(170, 206, 155, 0.7);
 }
 .pro {
     position: relative;
@@ -299,32 +362,39 @@ footer p {
 }
 .articleWorkTracebility {
     display: inline-block;
-    width: 45%;
     position: relative;
-    left: 240px;
+    bottom: 635px;
+    width: 465px;
+    left: 635px;
 }
 .articleWorkTracebilityParagraph {
     display: inline-block;
     position: relative;
+    left: 10px;
     width: 200px;
     bottom: 60px;
 }
 .articleLeadershipAndTeamManagement {
     display: inline-block;
-    width: 45%;
+    position: relative;
+    left: 15px;
+    bottom: 790px;
+    width: 465px;
 }
 .articleLeadershipAndTeamManagementParagraph {
     display: inline-block;
     position: relative;
+    left: 20px;
     width: 280px;
     padding-left: 20px;
     top: 10px;
 }
 .articleDecisionMaking {
     display: inline-block;
-    width: 45%;
     position: relative;
-    left: 215px;
+    bottom: 1220px;
+    width: 465px;
+    left: 615px;
 }
 .articleDecisionMakingParagraph {
     display: inline-block;
@@ -332,9 +402,10 @@ footer p {
     width: 150px;
     padding-left: 20px;
     bottom: 40px;
+    left: 20px;
 }
 .inscriptionText {
-    width: 45%;
+    width: 430px;
     margin-right: 18px;
     margin-top: 30px;
     height: 15px;
@@ -343,21 +414,21 @@ footer p {
 }
 .inscriptionTextArea {
     display: block;
-    width: 94%;
+    width: 900px;
     margin: 30px 0px;
     padding: 10px;
     border: black solid 1px;
 }
 .checkboxForm {
     position: relative;
-    left: 50%;
+    left: 480px;
 }
 .checkboxFormParagraph {
     position: relative;
-    left: 50%;
+    left: 480px;
 }
 .sectionCompanysMission {
-    height: 800px;
+    height: 900px;
 }
 .sectionCompanysMissionGradient {
     background-color: rgba(222, 239, 241, 1);
@@ -365,7 +436,7 @@ footer p {
 }
 .sectionCompanysMissionLogoCompany {
     position: relative;
-    left: 85%;
+    left: 800px;
     bottom: 40px;
     width: 120px;
 }
@@ -380,9 +451,9 @@ footer p {
 .companysMissionRoadParagraph {
     position: relative;
     bottom: 70px;
-    text-align: right;
     right: 150px;
     margin: 0%;
+    text-align: right;
     color: black;
     font-weight: bold;
 }
@@ -414,12 +485,12 @@ footer p {
 }
 .aboutUs {
     display: inline-block;
-    width: 45%;
+    width: 450px;
     margin-top: 30px;
 }
 .imageSectionCompanysMission{
-    width: 350px;
     position: relative;
+    width: 350px;
     left: 230px;
     top: 25px;
 }
@@ -427,13 +498,14 @@ footer p {
     color: #373867;
 }
 .ourProductsSection {
-    height: 850px;
+    font-family: 'Roboto', sans-serif;
+    height: 950px;
 }
 .ourProductsAssorted {
     display: inline-block;
-    width: 45%;
-    text-align: center;
+    width: 470px;
     margin-bottom: 80px;
+    text-align: center;
 }
 .ourProductsDivision {
     width: 300px;
@@ -449,11 +521,12 @@ footer p {
     margin-top: 15px;
 }
 .ourProductsSection ul li {
-    list-style-type: none;
     margin-top: 5px;
+    list-style-type: none;
 }
 .companiesSection {
     height: 750px;
+    font-family: 'Roboto', sans-serif;
 }
 .SectionCompaniesImage {
     width: 300px;
@@ -463,15 +536,15 @@ footer p {
 }
 .companiesSectionDivision {
     display: inline-block;
-    width: 60%;
     position: relative;
+    width: 450px;
     bottom: 70px;
     margin-left: 100px;
 }
 .companiesSectionSubDivision {
     display: inline-block;
-    width: 60%;
     position: relative;
+    width: 450px;
     right: 250px;
     bottom: 40px;
 }
@@ -486,9 +559,12 @@ footer p {
 .companiesSectionTitle {
     margin-bottom: 50px;
 }
+.supportSection {
+    font-family: 'Roboto', sans-serif;
+}
 .supportSectionDivision {
     display: inline-block;
-    width: 45%;
+    width: 450px;
 }
 .subDivision {
     position: relative;
@@ -520,15 +596,16 @@ footer p {
     margin-bottom: 30px;
 }
 .supportSectionButtonStyle {
-    background-color: #950033;
-    border-radius: 12px;
-    color: white;
-    padding: 15px 40px;
-    text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
+    padding: 15px 40px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #950033;
+    color: white;
+    
   }
 .supportSectionButtonStyle a {
     color: white;

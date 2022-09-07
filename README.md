@@ -15,6 +15,8 @@ We are a serious company that focuses on providing solutions to the various prob
 
     >   [Week 2](#week-2)
 
+    >   [Week 3](#week-3-🕐)
+
 - [Download](#download)
 
 
@@ -33,6 +35,8 @@ The technologies applied so far are:
 
 > ☑ FIGMA
 
+> ☑ CSS
+
 ### Week
 In this section, the content that is acquired will be uploaded and will be divided into weeks.
 
@@ -41,6 +45,9 @@ In the first week we worked in groups on how to design our pages from figma, giv
 
 ### Week 2 🕐
 In the second week we started to work with html individually, focusing on the creation of prototypes and the design of the page itself. The data used in week 1 was taken. It is important to highlight that the work with the styles has not yet started, that we will carry it out next week.
+
+### Week 3 🕐
+In the third week we work on how to apply styles to the design made previously by html. We apply different functions such as position, display, width, etc. We replicate the design created on the landing page with a css file.
 
 ### Download
 If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github. Link https://github.com/julianpiaggio/BaSP-A2022-Etapa-1.git
