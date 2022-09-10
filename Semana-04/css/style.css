@@ -1,0 +1,286 @@
+html,body {
+    overflow-x: hidden;
+    font-family: 'roboto';
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+    background-color: #373867;
+}
+
+h1 {
+    width: 80%;
+    text-align: center;
+    margin: 0%;
+    font-size: 30px;
+    color: #46A07B;  
+}
+
+h2 {
+    font-size: 2.4rem;
+    text-align: center;
+    color: #373867;
+}
+
+header img {
+    width: 40px;
+}
+nav img {
+    width: 30px;
+}
+nav ul,aside {
+    display: none;
+}
+
+nav {
+    background-color: #373867;
+}
+
+.imageWelcome {
+    width: 70%;
+    margin-top: 1rem;
+}
+
+.imageMain {
+    width: 3.1rem;
+}
+
+.firstSectionMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstSectionMain p {
+    margin-top: 30px;
+    width: 70%;
+}
+
+section {
+    margin: 2rem 0rem ;
+}
+
+.firstSectionMainTitle {
+    border-radius: 8px;
+    border: grey solid 3px;
+    height: 50px;
+    width: 200px;
+    margin: 4rem 0rem 2rem 0rem;
+    background-color: rgba(170, 206, 155, 0.7) ;
+}
+
+.sectionDividingLine {
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 70%;
+    border-top: 1px solid black;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.secondSectionMain article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    justify-content: center;
+    margin-top: 10px;
+    background-color: rgba(170, 206, 155, 0.3) ;
+}
+
+.flexItemApplicationFeatures {
+    text-align: center;
+}
+
+/* section why should */
+
+.sectionWhyShouldYouUseTrackgenix article{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 0px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img {
+    background-color: rgba(170, 206, 155, 0.3);
+    rotate: 45deg;
+    height: 70px;
+    width: 70px;
+}
+
+.sectionWhyShouldYouUseTrackgenix img {
+    padding-top: 10px;
+    margin-left: 5px;
+    rotate: 315deg;
+}
+
+.imgWorkTracebeality {
+    padding-left: 8px;
+}
+
+.parrafo-whyshould {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.articleProductivityBoosterTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.paragraphWhyShould {
+    font-size: 0.8rem;
+}
+/* inscription form*/
+/*
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: space-around;
+}
+*/
+form {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input {
+    display: block;
+    width: 80%;
+    height: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+form article {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+}
+
+form p {
+    font-size: 0.8rem;
+}
+
+form article input {
+    width: 25%;
+}
+
+.messageInscriptionForm {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 10rem;
+}
+
+label {
+    display: none;
+}
+/* companis mission */
+.sectionCompanysMissionGradient {
+    background-color: rgba(222, 239, 241, 1);
+    background-image: linear-gradient(rgba(222, 239, 241, 1), white);
+}
+
+.companisMissionTitle {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.companysMissionRoad {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin-left: 0.5rem;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #373867;
+}
+
+.secondRoadTitle {
+    width: 95%;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.companysMissionRoadParagraph {
+    text-align: center;
+    font-weight: 600;
+}
+
+.companysMissionParagraph {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.companysMissionComments {
+    background-color: rgba(217, 217, 217, 0.2);
+    height: 6rem;
+    margin-top: 1.5rem;
+}
+
+.companysMissionCommentsParagraph {
+    width: 90%;
+    margin: 1rem auto;
+    font-style: italic;
+}
+
+.companysMissionCommentsSecondParagraph {
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.aboutUsParagraph {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #373867;
+}
+
+.aboutUs {
+    text-align: center;
+}
