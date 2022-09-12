@@ -14,3 +14,10 @@ footer p {
     background-color: #373867;
     align-items: center;
 }
+
+@media (min-width: 768px) {
+    footer {
+        width: 70%;
+        margin-left: 30%;
+    }
+}

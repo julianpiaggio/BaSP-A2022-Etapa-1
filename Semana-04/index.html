@@ -14,18 +14,16 @@
         <link rel="stylesheet" href="../Semana-04/css/reset.css">
         <link rel="stylesheet" href="../Semana-04/css/style.css">
         <link rel="stylesheet" href="../Semana-04/css/header.css">
+        <link rel="stylesheet" href="../Semana-04/css/sidebar.css">
         <link rel="stylesheet" href="../Semana-04/css/main.css">
-        <link rel="stylesheet" href="..Semana-04/css/sidebar.css">
         <link rel="stylesheet" href="../Semana-04/css/footer.css">
     </head>
     <body>
         <header>
             <img src="../Semana-04/assets/images/LOGO-RR 3.png" alt="logoHeader">
-            <div class="titleHeader">
-                <h1>TRACKGENIX</h1>
-            </div>
+            <h1>TRACKGENIX</h1>
+            <img class="asa" src="../Semana-04/assets/images/clipart365828.png" alt="">
             <nav>
-                <img class="asa" src="../Semana-04/assets/images/clipart365828.png" alt="">
                 <ul>
                     <li><button><a href="#">Features</a></button></li>
                     <li><button><a href="#">Why Should You Use Trackgenix</a></button></li>
@@ -37,13 +35,21 @@
             </nav>
         </header>
         <aside>
-            <input type="search" value="search">
-            <img class="iconAside" src="../Semana-04/assets/images/search-icon.jpeg" alt="">
+            <div class="asideInput">
+                <input type="search" value="search">
+                <img class="iconAside" src="../Semana-04/assets/images/search-icon.jpeg" alt="">
+            </div>
             <h4>Menu</h4>
             <ul>
                 <li><a href="#">Home</a></li>
+                <div class="sectionDividingLine">
+                </div>
                 <li><a href="#">Sign Up</a></li>
+                <div class="sectionDividingLine">
+                </div>
                 <li><a href="#">Login</a></li>
+                <div class="sectionDividingLine">
+                </div>
                 <li><a href="#">Contact Information</a></li>
             </ul>
             <img src="../Semana-04/assets/images/LOGO-RR 3.png" alt="logo company">
@@ -52,7 +58,7 @@
             </p>
         </aside>
         <main>
-            <section class="firstSectionMain">
+            <section class="firstSectionMain sectionCompanysMissionGradient">
                 <div class="firstSectionMainTitle">
                     <h2>Welcome</h2>
                 </div>
@@ -68,7 +74,6 @@
             <section class="secondSectionMain">
                 <h3>Application Features</h3>
                 <div class="flex-container">
-                    <div class="flexItemApplicationFeatures">
                         <article class="articleHoursLog">
                             <p class="articleHoursLogParagraph">
                                 Hours Log
@@ -81,8 +86,6 @@
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/resource management.png" alt="imagen resource management">
                         </article>
-                    </div>
-                    <div class="flexItemApplicationFeatures">
                         <article class="articleReports">
                             <p class="articleReportsParagraph">
                                 Reports
@@ -95,7 +98,6 @@
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/multiple_roles.png" alt="imagen multiple roles">
                         </article>
-                    </div>
                 </div>
             </section>
             <div class="sectionDividingLine">
@@ -113,7 +115,7 @@
                         </p>
                     </div>
                     <div class="img">
-                        <img class="imageMain" src="../Semana-04/assets/images/produtivity booster.png" alt="logo5">
+                        <img class="imageMain aa" src="../Semana-04/assets/images/produtivity booster.png" alt="logo5">
                     </div>
                 </article>
                 <article class="articleWorkTracebility">
@@ -126,7 +128,7 @@
                         </p>
                     </div>
                     <div class="img">
-                        <img class="imageMain imgWorkTracebeality" src="../Semana-04/assets/images/work trace.png" alt="logo6">
+                        <img class="imageMain aa" src="../Semana-04/assets/images/work trace.png" alt="logo6">
                     </div>
                 </article>
                 <article class="articleLeadershipAndTeamManagement">
@@ -141,7 +143,7 @@
                         </p>
                     </div>
                     <div class="img">
-                        <img class="imageMain" src="../Semana-04/assets/images/leadership and team management.png" alt="logo7">
+                        <img class="imageMain aa" src="../Semana-04/assets/images/leadership and team management.png" alt="logo7">
                     </div>
                 </article>
                 <article class="articleDecisionMaking">
@@ -154,7 +156,7 @@
                         </p>
                     </div>
                     <div class="img">
-                        <img class="imageMain" src="../Semana-04/assets/images/decision making.png" alt="logo8">
+                        <img class="imageMain aa" src="../Semana-04/assets/images/decision making.png" alt="logo8">
                     </div>
                 </article>
             </section>
@@ -253,7 +255,7 @@
                     <img  class="imageWelcome" src="../Semana-04/assets/images/ourproducts1.png" alt="">
                     <div class="ourProductsDivision">
                         <p class="ourProductsAssortedTitle">
-                            Employee time control from any place and device
+                                Employee time control from any place and device
                         </p>
                         <p>
                             A single app for recording the day for any situation:
@@ -314,6 +316,7 @@
                             <li>Compensation Rules</li>
                             <li>Generation of bag of hours</li>
                             <li>Approval flow</li>
+                            
                         </ul>
                     </div>
                 </article>
@@ -377,24 +380,14 @@
                         Tutorials
                     </p>
                     <div class="tutorials">
-                        <div>
                             <ol>
-                                <li>"TrackGenix: Quick Start Guide."</li>
-                                <li>"How to setup TrackGenixfor your company: in-depth guide."</li>
-                                <li>"Proyect Management using TrackGenix."</li>
-                                <li>"Unlocking Max Productivity: Advanced Tips and Tricks for Workers."</li>
-                                <li>"Report Reviews Guide."</li>
-                                <li>"Google Calendar & other web services integration."</li>
+                                <li><div class="tuto">"TrackGenix: Quick Start Guide."</div><span>05:10</span></li>
+                                <li><div>"How to setup TrackGenixfor your company: in-depth guide."</div><span>31:02</span></li>
+                                <li><div>"Proyect Management using TrackGenix."</div><span>22:15</span></li>
+                                <li><div>"Unlocking Max Productivity: Advanced Tips and Tricks for Workers."</div><span>12:40</span></li>
+                                <li><div>"Report Reviews Guide."</div><span>09:10</span></li>
+                                <li><div>"Google Calendar & other web services integration."</div><span>11:25</span></li>
                             </ol>
-                        </div>
-                        <div class="tutorials2">
-                            <p>05:10</p>
-                            <p>31:02</p>
-                            <p>22:15</p>
-                            <p>12:40</p>
-                            <p>09:10</p>
-                            <p>11:25</p>
-                        </div>
                     </div>
                 <article class="supportSectionButton">
                     <button class="supportSectionButtonStyle">
@@ -424,4 +417,5 @@
                 </p>
             </footer>
     </body>
+</html>
 </html>
