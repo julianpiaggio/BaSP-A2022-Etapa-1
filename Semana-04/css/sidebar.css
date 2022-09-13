@@ -9,9 +9,6 @@ aside {
     margin-top: 4.2rem;
     background-color: rgba(159, 159, 168, 0.5);
 }
-.asideInput {
-    display: flex;
-}
 aside ul {
     display: flex;
     flex-direction: column;
@@ -34,7 +31,9 @@ aside p {
 aside img {
     margin-top: 40%;
 }
-
+.asideInput {
+    display: flex;
+}
 @media (min-width: 768px) {
     aside {
         visibility: visible;
