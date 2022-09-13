@@ -2,12 +2,10 @@
 footer {
     width: 100%;
 }
-
 footer p {
     margin: 0.8rem 0rem;
     text-align: center;
 }
-
 .iconfoo {
     display: flex;
     justify-content: space-around;

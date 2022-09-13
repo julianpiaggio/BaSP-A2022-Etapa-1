@@ -1,4 +1,3 @@
-
 header {
     position: fixed;
     display: flex;
@@ -9,53 +8,45 @@ header {
     border-radius: 0.5rem;
     background-color: #373867;
 }
-
 header img {
     width: 2rem;
 }
-
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #46A07B;  
 }
-
 h2 {
     font-size: 2.4rem;
     text-align: center;
     color: #373867;
 }
-
 nav {
     visibility: hidden;
     position: fixed;
     width: 70%;
     margin-left: 30%;
-    margin-top: 4rem;
+    margin-top: 3rem;
     height: 1rem;
 }
-
 nav ul {
     width: 100%;
 }
 
 nav li {
-    width: 16.5%;
+    width: 16.6%;
 }
-
 nav button {
     background-color: #373867;
-    height: 2rem;
+    height: 3rem;
     width: 100%;
 }
-
 nav a {
     color: #46A07B;
     text-decoration: none;
     width: 100%;
     font-size: 0.8rem;
 }
-
 @media (min-width: 768px) {
     .asa {
         visibility: hidden;

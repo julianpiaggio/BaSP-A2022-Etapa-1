@@ -1,32 +1,26 @@
 main {
     margin-top: 5rem;
 }
-
 .imageWelcome {
     width: 50%;
     margin-top: 1rem;
 }
-
 .imageMain {
     width: 40%;
     background-color: rgba(170, 206, 155, 0.3) ;
 }
-
 .firstSectionMain {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .firstSectionMain p {
     margin-top: 30px;
     width: 70%;
 }
-
 section {
     margin: 2rem 0rem ;
 }
-
 .firstSectionMainTitle {
     border-radius: 8px;
     border: grey solid 3px;
@@ -35,7 +29,14 @@ section {
     margin: 4rem 0rem 2rem 0rem;
     background-color: rgba(170, 206, 155, 0.7) ;
 }
-
+.firstSectionMainDesktop {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+}
+.firstSectionMainDesktop p {
+    width: 100%;
+}
 .sectionDividingLine {
     height: 2px;
     padding: 0;
@@ -43,19 +44,16 @@ section {
     width: 70%;
     border-top: 1px solid black;
 }
-
-.flex-container{
+.applicationFeaturesContainer{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 h3 {
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 2rem;
 }
-
 .secondSectionMain article {
     display: flex;
     flex-direction: column;
@@ -65,84 +63,40 @@ h3 {
     justify-content: center;
     margin-top: 10px;
 }
-
 .flexItemApplicationFeatures {
     text-align: center;
 }
-
-/* section why should */
-
 .sectionWhyShouldYouUseTrackgenix article{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     margin: 3rem 0rem;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
-
-.img {
-    background-color: rgba(170, 206, 155, 0.3);
-    rotate: 45deg;
-    height: 4.4rem;
-    width: 4.4rem;
+.imageWhyShould {
+    width: 100%;
+    background-color: white;
 }
-/*
-.img {
-    background-color: rgba(170, 206, 155, 0.3);
-    rotate: 45deg;
-    height: 20%;
-    width: 20%;
-}
-
-.aa {
-    align-items: center;
-    width: 70%;
-}*/
-
-.sectionWhyShouldYouUseTrackgenix img {
-    padding-top: 10px;
-    margin-left: 5px;
-    rotate: 315deg;
-}
-
-.imgWorkTracebeality {
-    padding-left: 8px;
-}
-
 .parrafo-whyshould {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
-
 .articleProductivityBoosterTitle {
     font-size: 1.2rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
-
 .paragraphWhyShould {
     font-size: 0.8rem;
 }
-/* inscription form*/
-/*
-.inputs {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: space-around;
-}
-*/
 form {
     margin-left: auto;
     margin-right: auto;
 }
-
 input {
     display: block;
     width: 80%;
@@ -151,7 +105,6 @@ input {
     margin-right: auto;
     margin-top: 1rem;
 }
-
 form article {
     display: flex;
     justify-content: space-around;
@@ -162,45 +115,36 @@ form article {
     margin-right: auto;
     margin-top: 2rem;
 }
-
 form p {
     font-size: 0.8rem;
 }
-
 form article input {
     width: 25%;
 }
-
 .messageInscriptionForm {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
-
 textarea {
     width: 100%;
     height: 10rem;
     margin-top: 1rem;
 }
-
 label {
     display: none;
 }
-/* companis mission */
 .sectionCompanysMissionGradient {
     background-color: rgba(222, 239, 241, 1);
     background-image: linear-gradient(rgba(222, 239, 241, 1), white);
 }
-
 .companisMissionTitle {
     display: flex;
     justify-content: space-around;
 }
-
 .logo {
     width: 5rem;
 }
-
 .companysMissionRoad {
     display: flex;
     flex-wrap: wrap;
@@ -213,56 +157,46 @@ label {
     font-weight: bold;
     color: #373867;
 }
-
 .secondRoadTitle {
     width: 95%;
     margin: 1rem auto;
     text-align: center;
 }
-
 .companysMissionRoadParagraph {
     text-align: center;
     font-weight: 600;
 }
-
 .companysMissionParagraph {
     text-align: center;
     margin-top: 1rem;
 }
-
 .companysMissionComments {
     background-color: rgba(217, 217, 217, 0.2);
     height: 6rem;
     margin-top: 1.5rem;
 }
-
 .companysMissionCommentsParagraph {
     width: 90%;
     margin: 1rem auto;
     font-style: italic;
 }
-
 .companysMissionCommentsSecondParagraph {
     text-align: right;
     margin-right: 1rem;
 }
-
-.aboutUsParagraph {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    color: #373867;
-}
-
 .aboutUs {
+    width: 90%;
+    margin-left: 5%;
     text-align: center;
+    align-items: center;
+}
+.aboutUsDesktop {
+    align-items: center;
 }
 
-/* our products */
 .ourProductsAssorted {
     text-align: center;
 }
-
 .ourProductsAssorted p,ul {
     display: flex;
     flex-wrap: wrap;
@@ -270,54 +204,51 @@ label {
     margin: 1rem auto;
     text-align: left;
 }
-
 .ourProductsAssorted ul {
     display: flex;
     flex-direction: column;
     list-style-type:disc;
 }
-
 .ourProductsAssortedTitle {
     font-size: 1.2rem;
     font-weight: bold;
 }
-/* companies */
 .companiesSectionDivision {
     width: 90%;
-    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0.5rem;
 }
-
+.companiesSectionSubDivision {
+    margin-left: 5%;
+    margin-right: 5%;
+    align-items: center;
+}
 .imageCompanyCenter {
-    text-align: right;
+    flex-direction: row-reverse;
 }
-
 .companiesSectionSubtitle {
     font: 1rem;
     font-weight: bold;
     margin-top: 1rem;
 }
-/* support */ 
 .supportSection {
     text-align: center;
 }
-
 .supportImageParagraph {
     width: 70%;
     margin:1rem auto;
     font-size: 1rem;
     font-weight: bold;
 }
-
 .supportSubitleTutorial {
     font-size: 1.75rem;
     margin-left: 1rem;
     text-align: left;
 }
-
 .tutorials {
     text-align: left;
 }
-
 .tutorials ol {
     display: flex;
     flex-direction: column;
@@ -325,18 +256,15 @@ label {
     margin-left: auto;
     margin-right: auto;
 }
-
 .tutorials li {
     display: flex;
     justify-content: space-between;
     font-style: italic;
+    font-weight: bold;
 }
-
 span {
     color: blue;
 }
-
-
 .supportSectionButtonStyle {
     font-size: 1rem;
     margin: 0.25rem auto;
@@ -345,7 +273,6 @@ span {
     text-align: center;
     background-color: #950033;
     color: white;
-    
   }
 .supportSectionButtonStyle a {
     text-decoration: none;

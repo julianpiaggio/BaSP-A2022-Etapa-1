@@ -35,10 +35,9 @@
             </nav>
         </header>
         <aside>
-            <div class="asideInput">
-                <input type="search" value="search">
-                <img class="iconAside" src="../Semana-04/assets/images/search-icon.jpeg" alt="">
-            </div>
+            <form class="asideInput">
+            <input type="search" value="search">
+            </form>
             <h4>Menu</h4>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -62,38 +61,40 @@
                 <div class="firstSectionMainTitle">
                     <h2>Welcome</h2>
                 </div>
-                <img class="imageWelcome" src="../Semana-04/assets/images/imagen seccion 1 landing.jpg" alt="imagen Welcome">
-                <p>
-                    “TRACKGENIX” is a revolutionary system designed for GigaTech Software Solutions SA. 
-                    This system will allow them to efficiently manage 
-                    their proyects, schedule flow, selected work teams and much more.
-                </p>
+                <div class="firstSectionMainDesktop">
+                    <img class="imageWelcome" src="../Semana-04/assets/images/imagen seccion 1 landing.jpg" alt="imagen Welcome">
+                    <p>
+                        “TRACKGENIX” is a revolutionary system designed for GigaTech Software Solutions SA. 
+                        This system will allow them to efficiently manage 
+                        their proyects, schedule flow, selected work teams and much more.
+                    </p>
+                </div>
             </section>
             <div class="sectionDividingLine">
             </div>
             <section class="secondSectionMain">
                 <h3>Application Features</h3>
-                <div class="flex-container">
-                        <article class="articleHoursLog">
-                            <p class="articleHoursLogParagraph">
+                <div class="applicationFeaturesContainer">
+                        <article>
+                            <p>
                                 Hours Log
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/hours log.png" alt="imagen hours log">
                         </article>
-                        <article class="articleResourceManagement">
-                            <p class="articleResourceManagementParagraph">
+                        <article>
+                            <p>
                                 Resource Management
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/resource management.png" alt="imagen resource management">
                         </article>
-                        <article class="articleReports">
-                            <p class="articleReportsParagraph">
+                        <article>
+                            <p>
                                 Reports
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/reportes.png" alt="imagen reports">
                         </article>
-                        <article class="articleMultipleRoles">
-                            <p class="articleMultipleRolesParagraph">
+                        <article>
+                            <p>
                                 Multiple Roles
                             </p>
                             <img class="imageMain" src="../Semana-04/assets/images/multiple_roles.png" alt="imagen multiple roles">
@@ -104,61 +105,63 @@
             </div>
             <section class="sectionWhyShouldYouUseTrackgenix">
                 <h3>Why Should You Use Trackgenix</h3>
-                <article class="articleProductivityBooster">
-                    <div class="parrafo-whyshould">
-                        <p class="articleProductivityBoosterTitle pro">
-                            Productivity Booster
-                        </p>
-                        <p class="articleProductivityBoosterParagraph paragraphWhyShould">
-                            Be more productive using better Focus, Time Management, Organization
-                            and Efficiency.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img class="imageMain aa" src="../Semana-04/assets/images/produtivity booster.png" alt="logo5">
-                    </div>
-                </article>
-                <article class="articleWorkTracebility">
-                    <div class="parrafo-whyshould">
-                        <p class="articleProductivityBoosterTitle work">
-                            Work Traceability
-                        </p>
-                        <p class="articleWorkTracebilityParagraph paragraphWhyShould">
-                            Keep track of specs, changes, requests, results, and versions.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img class="imageMain aa" src="../Semana-04/assets/images/work trace.png" alt="logo6">
-                    </div>
-                </article>
-                <article class="articleLeadershipAndTeamManagement">
-                    <div class="parrafo-whyshould">
-                        <p class="articleProductivityBoosterTitle leader">
-                            Leadership and team management
-                        </p>
-                        <p class="articleLeadershipAndTeamManagementParagraph paragraphWhyShould">
-                            Lead a group of people in accomplishing a task or common goal. Effective 
-                        team management involves supporting, communicating with and uplifting team 
-                        members so they perform to the best of their abilities and continue to grow as professionals..
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img class="imageMain aa" src="../Semana-04/assets/images/leadership and team management.png" alt="logo7">
-                    </div>
-                </article>
-                <article class="articleDecisionMaking">
-                    <div class="parrafo-whyshould">
-                        <p class="articleProductivityBoosterTitle decision">
-                            Decision making
-                        </p>
-                        <p class="articleDecisionMakingParagraph paragraphWhyShould">
-                            Make better decisions for your business.
-                        </p>
-                    </div>
-                    <div class="img">
-                        <img class="imageMain aa" src="../Semana-04/assets/images/decision making.png" alt="logo8">
-                    </div>
-                </article>
+                <div class="whyShouldContainer">
+                    <article>
+                        <div class="parrafo-whyshould">
+                            <p class="articleProductivityBoosterTitle">
+                                Productivity Booster
+                            </p>
+                            <p class="paragraphWhyShould">
+                                Be more productive using better Focus, Time Management, Organization
+                                and Efficiency.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imageMain imageWhyShould" src="../Semana-04/assets/images/productivity-boosterrombo.png" alt="">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="parrafo-whyshould">
+                            <p class="articleProductivityBoosterTitle">
+                                Work Traceability
+                            </p>
+                            <p class="paragraphWhyShould">
+                                Keep track of specs, changes, requests, results, and versions.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imageMain imageWhyShould" src="../Semana-04/assets/images/work-traceabilityrombo.png" alt="">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="parrafo-whyshould">
+                            <p class="articleProductivityBoosterTitle">
+                                Leadership and team management
+                            </p>
+                            <p class="paragraphWhyShould">
+                                Lead a group of people in accomplishing a task or common goal. Effective 
+                            team management involves supporting, communicating with and uplifting team 
+                            members so they perform to the best of their abilities and continue to grow as professionals..
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imageMain imageWhyShould" src="../Semana-04/assets/images/leadership-and-team-managementrombo.png" alt="">
+                        </div>
+                    </article>
+                    <article>
+                        <div class="parrafo-whyshould">
+                            <p class="articleProductivityBoosterTitle">
+                                Decision making
+                            </p>
+                            <p class="paragraphWhyShould">
+                                Make better decisions for your business.
+                            </p>
+                        </div>
+                        <div>
+                            <img class="imageMain imageWhyShould" src="../Semana-04/assets/images/decision-makingrombo.png" alt="">
+                        </div>
+                    </article>
+                </div>
             </section>
             <div class="sectionDividingLine">
             </div>
@@ -173,8 +176,8 @@
                         <p>
                             Email me a copy
                         </p>
-                        <input class="checkboxForm" type="checkbox"> 
-                        <p class="checkboxFormParagraph">
+                        <input type="checkbox"> 
+                        <p>
                             I am a human and I accept terms of service
                         </p> 
                     </article>
@@ -188,27 +191,27 @@
             </section>
             <div class="sectionDividingLine">
             </div>
-            <section class="sectionCompanysMission">
+            <section>
                 <div class="sectionCompanysMissionGradient">
                     <div class="companisMissionTitle">
                         <h3>Company's Mission</h3>
                         <img class="imageMain logo" src="../Semana-04/assets/images/LOGO-RR 3.png" alt="">
                     </div>
                     <article>
-                        <p class="companysMissionRoad underline">
+                        <p class="companysMissionRoad">
                             WHERE WE STARTED; WHERE WE ARE HEADED
                         </p>
                         <p class="companysMissionRoadParagraph companysMissionParagraph">
                             Make time your ally; make puntuality the difference
                         </p>
-                        <p class="companysMissionRoadSecondParagraph companysMissionParagraph">
+                        <p class="companysMissionParagraph">
                             Our mission is to allow workers all over the world to reach their full potential.
                         </p>
-                        <p class="companysMissionRoadThirdParagraph companysMissionParagraph">
+                        <p class="companysMissionParagraph">
                             Our goal is to bring more power to start-ups through top-notch and user-friendly time-tracking
                         web apps, easily accessible through any device.
                         </p>
-                        <p class="companysMissionRoadSecondParagraph companysMissionParagraph">
+                        <p class="companysMissionParagraph">
                             We believe in integrity, honesty, passion for our client's
                         ideas and communication.
                         </p>
@@ -227,161 +230,171 @@
                             </p>
                         </div>
                     </article>
-                </div>
-                <article class="aboutUs">
                     <p class="companysMissionRoad secondRoadTitle">
                         About Us
                     </p>
-                    <p class="aboutUsParagraph">
-                        RadiumRocket developed TrackGenix as a software solution for optimal time-tracking and project management as
-                    a request for one of its most trusted clients, GigaTech Software Solutions, in late 2021, and swiftly became
-                    one of the most requested services in all of the million-dollar South American productivity industry.
-                    </p>
-                    <p class="aboutUsParagraph">
-                        RadiumRocket are a group of passionate people fond of the latest cutting edge technologies in software development.
-                    They position ourselves at your side through all the process of development being responsible and co-workers with you to
-                    successfully get your product moving.
-                    </p>
-                </article>
-                <article class="aboutUs">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/security.jpg" alt="">
-                </article>
+                </div>
+                <div class="aboutUsDesktop">
+                    <article class="aboutUs">
+                            <p>
+                                RadiumRocket developed TrackGenix as a software solution for optimal time-tracking and project management as
+                            a request for one of its most trusted clients, GigaTech Software Solutions, in late 2021, and swiftly became
+                            one of the most requested services in all of the million-dollar South American productivity industry.
+                            RadiumRocket are a group of passionate people fond of the latest cutting edge technologies in software development.
+                            They position ourselves at your side through all the process of development being responsible and co-workers with you to
+                            successfully get your product moving.
+                            </p>
+                    </article>
+                    <article class="aboutUs">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/security.jpg" alt="">
+                    </article>
+                </div>
             </section>
             <div class="sectionDividingLine">
             </div>
-            <section class="ourProductsSection">
+            <section>
                 <h3>Our Products</h3>
-                <article class="ourProductsAssorted">
-                    <img  class="imageWelcome" src="../Semana-04/assets/images/ourproducts1.png" alt="">
-                    <div class="ourProductsDivision">
-                        <p class="ourProductsAssortedTitle">
-                                Employee time control from any place and device
-                        </p>
-                        <p>
-                            A single app for recording the day for any situation:
-                        </p>
-                        <ul class="uli">
-                            <li>Web</li>
-                            <li>Mobile app</li>
-                            <li>kiosk with tablet</li>
-                            <li>Biometric recognition devices</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="ourProductsAssorted">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts3.png" alt="">
-                    <div class="ourProductsDivision">
-                        <p class="ourProductsAssortedTitle">
-                            The most intuitive time control app
-                        </p>
-                        <p>
-                            Registration of the day from anywhere to promote teleworking
-                            and self-management of time.
-                        </p>
-                        <ul>
-                            <li>24 hour access from anywhere</li>
-                            <li>Geolocated transfer detection system</li>
-                            <li>Instant notifications and alerts</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="ourProductsAssorted">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts2.png" alt="">
-                    <div class="ourProductsDivision">
-                        <p class="ourProductsAssortedTitle">
-                            Customized working day registration policies
-                        </p>
-                        <p>
-                            Customize the mandatory registration of the working day with a completely 
-                            flexible app to clock in at work. Apply more restrictive measures:
-                        </p>
-                        <ul>
-                            <li>Expected transfer in one click</li>
-                            <li>Weekly massive transfer</li>
-                            <li>Flexible entry and exit</li>
-                        </ul>
-                    </div>
-                </article>
-                <article class="ourProductsAssorted">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts4.png" alt="">
-                    <div class="ourProductsDivision">
-                        <p class="ourProductsAssortedTitle">
-                            Overtime and complementary hours management
-                        </p>
-                        <p>
-                            Keep track of hours worked and overtime with customizable rules.
-                        </p>
-                        <ul>
-                            <li>Types of overtime</li>
-                            <li>Compensation Rules</li>
-                            <li>Generation of bag of hours</li>
-                            <li>Approval flow</li>
-                            
-                        </ul>
-                    </div>
-                </article>
+                <div class="ourProductsContainer">
+                    <article class="ourProductsAssorted">
+                        <img  class="imageWelcome" src="../Semana-04/assets/images/ourproducts1.png" alt="">
+                        <div>
+                            <p class="ourProductsAssortedTitle">
+                                    Employee time control from any place and device
+                            </p>
+                            <p>
+                                A single app for recording the day for any situation:
+                            </p>
+                            <ul class="uli">
+                                <li>Web</li>
+                                <li>Mobile app</li>
+                                <li>kiosk with tablet</li>
+                                <li>Biometric recognition devices</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="ourProductsAssorted">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts3.png" alt="">
+                        <div>
+                            <p class="ourProductsAssortedTitle">
+                                The most intuitive time control app
+                            </p>
+                            <p>
+                                Registration of the day from anywhere to promote teleworking
+                                and self-management of time.
+                            </p>
+                            <ul>
+                                <li>24 hour access from anywhere</li>
+                                <li>Geolocated transfer detection system</li>
+                                <li>Instant notifications and alerts</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="ourProductsAssorted">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts2.png" alt="">
+                        <div>
+                            <p class="ourProductsAssortedTitle">
+                                Customized working day registration policies
+                            </p>
+                            <p>
+                                Customize the mandatory registration of the working day with a completely 
+                                flexible app to clock in at work. Apply more restrictive measures:
+                            </p>
+                            <ul>
+                                <li>Expected transfer in one click</li>
+                                <li>Weekly massive transfer</li>
+                                <li>Flexible entry and exit</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="ourProductsAssorted">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/ourproducts4.png" alt="">
+                        <div>
+                            <p class="ourProductsAssortedTitle">
+                                Overtime and complementary hours management
+                            </p>
+                            <p>
+                                Keep track of hours worked and overtime with customizable rules.
+                            </p>
+                            <ul>
+                                <li>Types of overtime</li>
+                                <li>Compensation Rules</li>
+                                <li>Generation of bag of hours</li>
+                                <li>Approval flow</li>
+                                
+                            </ul>
+                        </div>
+                    </article>
+                </div>
             </section>
             <div class="sectionDividingLine">
             </div>
-            <section class="companiesSection">
-                <h3 class="companiesSectionTitle">Companies</h3>
+            <section>
+                <h3>Companies</h3>
                 <div class="companiesSectionDivision">
                     <img class="imageWelcome" src="../Semana-04/assets/images/companies1.jpeg" alt="">
-                    <p class="companiesSectionSubtitle">
-                        GigaTech Software Solutions SA building
-                    </p>
-                    <p>
-                        Trackgenix is a HR software company thar streamines human resource management
-                        for clients in more than 1200 cities around the world.
-                    </p>
+                    <div class="companiesSectionSubDivision">
+                        <p class="companiesSectionSubtitle">
+                            GigaTech Software Solutions SA building
+                        </p>
+                        <p>
+                            Trackgenix is a HR software company thar streamines human resource management
+                            for clients in more than 1200 cities around the world.
+                        </p>
+                    </div>
                 </div>
                 <div class="companiesSectionDivision imageCompanyCenter">
                     <img class="imageWelcome" src="../Semana-04/assets/images/companies2.jpeg" alt="">
-                    <p class="companiesSectionSubtitle">
-                        An inclusive workplace for everyone
-                    </p>
-                    <p>
-                        Get to know our team and our officesand join us in our leap towards better
-                        human resources management. Learn how companies from all sectors already 
-                        manage talent in a more efficient and humane way with our human resources software.
-                    </p>
+                    <div class="companiesSectionSubDivision">
+                        <p class="companiesSectionSubtitle">
+                            An inclusive workplace for everyone
+                        </p>
+                        <p>
+                            Get to know our team and our officesand join us in our leap towards better
+                            human resources management. Learn how companies from all sectors already 
+                            manage talent in a more efficient and humane way with our human resources software.
+                        </p>
+                    </div>
                 </div>
-                <div class="companiesSectionDivision our">
+                <div class="companiesSectionDivision">
                     <img class="imageWelcome" src="../Semana-04/assets/images/companies3.jpeg" alt="">
-                    <p class="companiesSectionSubtitle">
-                        Our worplace, our world
-                    </p>
-                    <p>
-                        Trackgenix was created remotely in 2008 by Yves Hiernaux and Mic Cvilic after
-                        many yearsof working with hard-to-manage and even harder-to-understand reports
-                        and timesheets.Although we have grown, we continue with the same goal of offering
-                        a flexible, reliable and easy-to-use time control tool.
-                    </p>
+                    <div class="companiesSectionSubDivision">
+                        <p class="companiesSectionSubtitle">
+                            Our worplace, our world
+                        </p>
+                        <p>
+                            Trackgenix was created remotely in 2008 by Yves Hiernaux and Mic Cvilic after
+                            many yearsof working with hard-to-manage and even harder-to-understand reports
+                            and timesheets.Although we have grown, we continue with the same goal of offering
+                            a flexible, reliable and easy-to-use time control tool.
+                        </p>
+                    </div>
                 </div>
             </section>
             <div class="sectionDividingLine">
             </div>
             <section class="supportSection">
-                <h3 class="companiesSectionTitle">Support</h3>
-                <article class="supportSectionDivision">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/support1.jpg" alt="">    
-                </article>
-                <p class="supportImageParagraph">
-                    Phone call or Video conference support from 8am to 4pm everyday.
-                </p>
-                <article class="supportSectionDivision subDivision">
-                    <img class="imageWelcome" src="../Semana-04/assets/images/support2.jpg" alt="">    
-               </article>
-                <p class="supportImageParagraph">
-                    24hs support by online chat-bot.
-                </p>
-                <article class="supportTitleTutorial">
+                <h3>Support</h3>
+                <div class="supportSectionContainer">
+                    <article class="supportSectionDivision">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/support1.jpg" alt="">    
+                        <p class="supportImageParagraph">
+                        Phone call or Video conference support from 8am to 4pm everyday.
+                        </p>
+                    </article>
+                    <article class="supportSectionDivision">
+                        <img class="imageWelcome" src="../Semana-04/assets/images/support2.jpg" alt="">    
+                        <p class="supportImageParagraph">
+                        24hs support by online chat-bot.
+                        </p>
+                    </article>
+                </div>
+                <article>
                     <p class="supportSubitleTutorial">
                         Tutorials
                     </p>
                     <div class="tutorials">
                             <ol>
-                                <li><div class="tuto">"TrackGenix: Quick Start Guide."</div><span>05:10</span></li>
+                                <li><div>"TrackGenix: Quick Start Guide."</div><span>05:10</span></li>
                                 <li><div>"How to setup TrackGenixfor your company: in-depth guide."</div><span>31:02</span></li>
                                 <li><div>"Proyect Management using TrackGenix."</div><span>22:15</span></li>
                                 <li><div>"Unlocking Max Productivity: Advanced Tips and Tricks for Workers."</div><span>12:40</span></li>
