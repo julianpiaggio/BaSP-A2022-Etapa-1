@@ -17,6 +17,8 @@ We are a serious company that focuses on providing solutions to the various prob
 
     >   [Week 3](#week-3-🕐)
 
+    >   [Week 4](#week-4-🕐)
+
 - [Download](#download)
 
 
@@ -48,6 +50,9 @@ In the second week we started to work with html individually, focusing on the cr
 
 ### Week 3 🕐
 In the third week we work on how to apply styles to the design made previously by html. We apply different functions such as position, display, width, etc. We replicate the design created on the landing page with a css file.
+
+### Week 4 🕐
+In week 4 we work on responsive design to shape the landing page in different dimensions, allowing to have 3 specific views giving mobile, tablet and desktop. We worked with flexbox, which allowed us to mold the elements in a broader, more complete and verbose way than with css.
 
 ### Download
 If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github. Link https://github.com/julianpiaggio/BaSP-A2022-Etapa-1.git
