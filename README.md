@@ -19,6 +19,8 @@ We are a serious company that focuses on providing solutions to the various prob
 
     >   [Week 4](#week-4-🕐)
 
+    >   [Week 5](#week-5-🕐)
+
 - [Download](#download)
 
 
@@ -54,5 +56,8 @@ In the third week we work on how to apply styles to the design made previously b
 ### Week 4 🕐
 In week 4 we work on responsive design to shape the landing page in different dimensions, allowing to have 3 specific views giving mobile, tablet and desktop. We worked with flexbox, which allowed us to mold the elements in a broader, more complete and verbose way than with css.
 
+### Week 5 🕐
+In week 5 we work with the principles of javascript. We start to create variables, the types of variables there are and the use of properties such as toUpperCasa, subString, etc. We did practical exercises on functions.
+
 ### Download
-If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github. Link https://github.com/julianpiaggio/BaSP-A2022-Etapa-1.git
+If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github. Link https://julianpiaggio.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
