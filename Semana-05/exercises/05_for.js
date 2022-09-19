@@ -27,7 +27,7 @@ console.log('-- EXCERCISE 5.C:');
 var sentences = ''; 
 
 for(var i=0 ; i < days.length ; i++){
-    sentences = sentences + (days[i]).split(',');
+    sentences = sentences + (days[i]).split() + ' ';
 }
 alert(sentences);
 

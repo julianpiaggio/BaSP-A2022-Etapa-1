@@ -49,6 +49,9 @@ console.log('-- EXCERCISE 3.A:');
  /* Crear una copia del array de meses que contenga desde Mayo hasta Noviembre (utilizar slice). */
  console.log('-- EXCERCISE 3.G:');
 
+ var months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre",
+ "Noviembre", "Diciembre"];
+ 
  var littleMonths = months.slice(4,11);
 
  console.log(littleMonths);
