@@ -2,14 +2,14 @@ main {
     margin-top: 5rem;
 }
 section {
-    margin: 2rem 0rem ;
+    margin: 32px 0px ;
 }
 h3 {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     font-size: 1.5rem;
 }
-span {
+.colorTimeTutorials {
     color: blue;
 }
 form {
@@ -22,9 +22,9 @@ input {
     height: 1.5rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
-form article {
+.formCheckbox {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -32,10 +32,7 @@ form article {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 2rem;
-}
-form p {
-    font-size: 0.8rem;
+    margin-top: 32px;
 }
 form article input {
     width: 25%;
@@ -43,14 +40,16 @@ form article input {
 textarea {
     width: 100%;
     height: 10rem;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 label {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    font-size: 0.8rem;
 }
 .imageWelcome {
     width: 50%;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 .imageMain {
     width: 40%;
@@ -68,7 +67,7 @@ label {
 .firstSectionMainTitle {
     height: 50px;
     width: 200px;
-    margin: 4rem 0rem 2rem 0rem;
+    margin: 64px 0px 32px 0px;
     border-radius: 8px;
     border: grey solid 3px;
     background-color: rgba(170, 206, 155, 0.7) ;
@@ -113,19 +112,19 @@ label {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-    margin: 3rem 0rem;
+    margin: 48px 0px;
 }
 .imageWhyShould {
     width: 100%;
     background-color: white;
 }
-.parrafo-whyshould {
+.parrafoWhyshould {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
 .articleProductivityBoosterTitle {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -152,9 +151,9 @@ label {
     display: flex;
     flex-wrap: wrap;
     width: 70%;
-    margin-left: 0.5rem;
+    margin-left: 8px;
     margin-right: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     color: #373867;
     text-align: left;
     font-size: 1.5rem;
@@ -162,7 +161,7 @@ label {
 }
 .secondRoadTitle {
     width: 95%;
-    margin: 1rem auto;
+    margin: 16px auto;
     text-align: center;
 }
 .companysMissionRoadParagraph {
@@ -171,21 +170,24 @@ label {
 }
 .companysMissionParagraph {
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 16px;
 }
 .companysMissionComments {
     height: 6rem;
-    margin-top: 1.5rem;
+    margin-top: 24px;
     background-color: rgba(217, 217, 217, 0.2);
 }
 .companysMissionCommentsParagraph {
     width: 90%;
-    margin: 1rem auto;
+    margin: 16px auto;
     font-style: italic;
+}
+.imgCompanies {
+    height:70%;
 }
 .companysMissionCommentsSecondParagraph {
     text-align: right;
-    margin-right: 1rem;
+    margin-right: 16px;
 }
 .aboutUs {
     width: 90%;
@@ -204,7 +206,7 @@ label {
     display: flex;
     flex-wrap: wrap;
     width: 65%;
-    margin: 1rem auto;
+    margin: 16px auto;
     text-align: left;
 }
 .ourProductsAssorted ul {
@@ -220,7 +222,7 @@ label {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 1rem 0.5rem;
+    margin: 16px 8px;
 }
 .companiesSectionSubDivision {
     margin-left: 5%;
@@ -231,8 +233,8 @@ label {
     flex-direction: row-reverse;
 }
 .companiesSectionSubtitle {
-    font: 1rem;
-    margin-top: 1rem;
+    font-size: 1rem;
+    margin-top: 16px;
     font-weight: bold;
 }
 .supportSection {
@@ -240,12 +242,12 @@ label {
 }
 .supportImageParagraph {
     width: 70%;
-    margin:1rem auto;
+    margin:16px auto;
     font-size: 1rem;
     font-weight: bold;
 }
 .supportSubitleTutorial {
-    margin-left: 1rem;
+    margin-left: 16px;
     text-align: left;
     font-size: 1.75rem;
 }
@@ -266,9 +268,9 @@ label {
     font-weight: bold;
 }
 .supportSectionButtonStyle {
-    margin: 0.25rem auto;
-    padding: 1rem 2rem;
-    border-radius: 1rem;
+    margin: 4px auto;
+    padding: 16px 32px;
+    border-radius: 16px;
     text-align: center;
     background-color: #950033;
     color: white;
@@ -282,7 +284,7 @@ label {
 .supportSectionButton {
     display: flex;
     text-align: center;
-    margin-top: 3rem;
+    margin-top: 48px;
 }
 
 @media (min-width: 768px) {

@@ -1,12 +1,12 @@
 aside {
-    visibility: hidden;
+    display: none;
     position: fixed;
     width: 30%;
     height: 100%;
     font-size: 1.5rem;
     line-height: 2rem;
     text-align: center;
-    margin-top: 4.2rem;
+    margin-top: 67.2px;
     background-color: rgba(159, 159, 168, 0.5);
 }
 aside ul {
@@ -20,10 +20,10 @@ aside ul a {
     color:#46A07B;
     font-size: 1rem;
 }
-aside h4 {
+.subtitleAside {
     color: black;
     font-size: 1.5rem;
-    margin-top: 1rem;
+    margin-top: 16px;
 } 
 aside p {
     font-size: 0.6rem;
@@ -36,6 +36,6 @@ aside img {
 }
 @media (min-width: 768px) {
     aside {
-        visibility: visible;
+        display: flex;
     }
 }

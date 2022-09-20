@@ -22,11 +22,11 @@ h2 {
     color: #373867;
 }
 nav {
-    visibility: hidden;
+    display: none;
     position: fixed;
     width: 70%;
     margin-left: 30%;
-    margin-top: 3rem;
+    margin-top: 48px;
     height: 1rem;
 }
 nav ul {
@@ -48,10 +48,11 @@ nav a {
     text-decoration: none;
 }
 @media (min-width: 768px) {
-    .asa {
+
+    .burguerMenu {
         visibility: hidden;
     }
     nav {
-        visibility: visible;
+        display: flex;
     }
 }

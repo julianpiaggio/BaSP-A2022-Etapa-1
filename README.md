@@ -41,6 +41,10 @@ The technologies applied so far are:
 
 > ☑ CSS
 
+> ☑ FLEXBOX
+
+> ☑ JAVASCRIPT
+
 ### Week
 In this section, the content that is acquired will be uploaded and will be divided into weeks.
 
@@ -60,4 +64,4 @@ In week 4 we work on responsive design to shape the landing page in different di
 In week 5 we work with the principles of javascript. We start to create variables, the types of variables there are and the use of properties such as toUpperCasa, subString, etc. We did practical exercises on functions.
 
 ### Download
-If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github. Link https://julianpiaggio.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
+If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github or you can see it directly with this link that I leave below. Link https://julianpiaggio.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html
