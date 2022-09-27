@@ -29,13 +29,14 @@ aside p {
     font-size: 0.6rem;
 }
 aside img {
-    margin-top: 40%;
+    width: 30%;
+    margin: 40% auto 0% auto;
 }
-.asideInput {
-    display: flex;
-}
+
+
 @media (min-width: 768px) {
     aside {
         display: flex;
+        flex-direction: column;
     }
 }
