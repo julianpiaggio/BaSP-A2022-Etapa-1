@@ -59,6 +59,19 @@ main input {
     border-radius: 10px;
 }
 
+.greenBorder {
+    border: solid 1px green;
+}
+
+.redBorder {
+    border: solid 1px red;
+}
+
+.redP {
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+}
 @media (min-width: 768px) {
     main {
         flex: 70%;
