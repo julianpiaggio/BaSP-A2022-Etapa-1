@@ -26,34 +26,34 @@ window.onload = function () {
     } 
 }
     mailInput.onfocus = function() {
-        mailInput.parentNode.removeChild(paragraphErrorMail);
+        paragraphErrorMail.remove();
         mailInput.classList.remove('greenBorder' , 'redBorder');
 }
-    function validateNumbers(){
-        var data = (passwordInput.value);
-        for(i=0; i<data.length ; i++){
-            if ((numbers.includes(passwordInput[i]))){
-        } else {
-            return false;
+function validateLettersForPassword(texto){;
+    texto = passwordInput.value;
+    for(i=0; i<texto.length; i++){
+        console.log()
+        if (letras.indexOf(texto.charAt(i),0)!=-1 && texto.length > 3){
+        return true;
         }
     }
+    return false;
 }
-    
-    function validateLetters() {
-        var data = (passwordInput.value);
-        for(var i=0 ; i < data.length ; i++){
-            if(data[i].toUpperCase() != data[i].toLowerCase()){
-                return true;
-            } else {
-                return false;
-        }
+
+function validateNumbersForPassword (){
+    var data = (passwordInput.value);
+    if (!isNaN(data[data.length - 1]) ) {
+        return true;
+    } else {
+        return false;
     }
 }
-    function validatePassword () {
-        if ((validateLetters() === true && validateNumbers() !== true) && passwordInput.value.length > 7) {
-            return true;
-        } else {
-            return false;
+
+function validatePassword () {
+    if ((validateLettersForPassword() === true || validateNumbersForPassword() === true) && passwordInput.value.length > 7) {
+        return true;
+    } else {
+        return false;
     }
 }
     passwordInput.onblur = function() {
@@ -69,7 +69,7 @@ window.onload = function () {
     } 
 }
     passwordInput.onfocus = function() {
-        passwordInput.parentNode.removeChild(paragraphErrorPassword);
+        paragraphErrorPassword.remove();
         passwordInput.classList.remove('greenBorder' , 'redBorder');
 }
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];

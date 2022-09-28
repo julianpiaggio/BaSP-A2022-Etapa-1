@@ -78,7 +78,7 @@ window.onload = function () {
     lastName.onfocus = function() {
         paragraphErrorLastName.remove();
         lastName.classList.remove('greenBorder' , 'redBorder');
-}
+    }
     function validateIdentificationDocument (){
         var data = (identificationDocument.value);
         if (!isNaN(data) && data.length > 7){
@@ -249,14 +249,12 @@ window.onload = function () {
         }
     }
 
-function validateAdrress () {
+    function validateAdrress () {
     if (validateLettersForAddress() === true && validateNumbersForAddress() === true ) {
         return true;
     }
-}
-
-
-address.onblur = function() {
+    }
+    address.onblur = function() {
     if (validateAdrress () === true)  {
         address.classList.remove('redBorder');
         address.classList.add('greenBorder');
@@ -267,33 +265,32 @@ address.onblur = function() {
         address.classList.remove('greenBorder');
         address.classList.add('redBorder');
     } 
-}
-address.onfocus = function() {
+    }
+    address.onfocus = function() {
     paragraphErrorAddress.remove();
     address.classList.remove('greenBorder' , 'redBorder');
-}
-
-
-function validateLettersForPassword(texto){;
-    texto = password.value;
-    for(i=0; i<texto.length; i++){
-        console.log()
-        if (letras.indexOf(texto.charAt(i),0)!=-1 && texto.length > 3){
-        return true;
-        }
     }
-    return false;
-}
 
-function validateNumbersForPassword (){
-    var data = (password.value);
-    if (!isNaN(data[data.length - 1]) ) {
-        return true;
-    } else {
+
+    function validateLettersForPassword(texto){;
+        texto = password.value;
+        for(i=0; i<texto.length; i++){
+            console.log()
+            if (letras.indexOf(texto.charAt(i),0)!=-1 && texto.length > 3){
+            return true;
+            }
+        }
         return false;
     }
-}
 
+    function validateNumbersForPassword (){
+        var data = (password.value);
+        if (!isNaN(data[data.length - 1]) ) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 
     function validatePassword () {
         if ((validateLettersForPassword() === true || validateNumbersForPassword() === true) && password.value.length > 7) {
@@ -303,6 +300,7 @@ function validateNumbersForPassword (){
         }
     }
     password.onblur = function() {
+        console.log('adsd');
         if (validatePassword () === true)  {
             password.classList.remove('redBorder');
             password.classList.add('greenBorder');
@@ -341,7 +339,7 @@ function validateNumbersForPassword (){
     rePassword.onfocus = function() {
         paragraphErrorRePassword.remove();
         rePassword.classList.remove('greenBorder' , 'redBorder');
-}
+    }
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];
     submitButton.onclick = function(e) {
         e.preventDefault();
