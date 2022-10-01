@@ -340,38 +340,52 @@ window.onload = function () {
         paragraphErrorRePassword.remove();
         rePassword.classList.remove('greenBorder' , 'redBorder');
     }
+
+    function validateEmpty (texto) {
+        if (texto === '') {
+            texto.classList.add('redBorder');
+            return true;
+        } else {
+            return false;
+        }
+    }
+
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];
     submitButton.onclick = function(e) {
         e.preventDefault();
-        if (validateFirstName() === true && validateLastName() === true && validateIdentificationDocument() === true && validatePhoneNumber() === true
-        && validatePostalCode() === true && validateCity() === true && validateMail() === true && validateDateBirth() === true && validateAdrress() === true
+        if (validateFirstName() === true && validateLastName() === true && validateIdentificationDocument() === true 
+        && validatePhoneNumber() === true && validatePostalCode() === true && validateCity() === true 
+        && validateMail() === true && validateDateBirth() === true && validateAdrress() === true
         && validatePassword() === true && validateRePassword() === true) {
             return alert('first name is:' + ' ' + firstName.value + '\n' 
-            + 'last name is:' + ' ' + lastName.value + '\n' + 'id is:' + identificationDocument.value + '\n' + 'the number is:' + phoneNumber.value + '\n' +
-            'postal code:' + postalCode.value + '\n' + 'city is' + city.value + '\n' + 'email is:' + mailInput.value + '\n' + 'date of birth is:' +
-            dateBirth.value + '\n' + 'address is:' + address.value + '\n' + 'password is:' + password.value + '\n' + 'confirm password is:' + rePassword.value);
+            + 'last name is:' + ' ' + lastName.value + '\n' + 'id is:' + identificationDocument.value + '\n' + 'the number is:' 
+            + phoneNumber.value + '\n' +
+            'postal code:' + postalCode.value + '\n' + 'city is' + city.value + '\n' + 'email is:' + mailInput.value + '\n' 
+            + 'date of birth is:' + dateBirth.value + '\n' + 'address is:' + address.value + '\n' + 'password is:' + password.value + '\n' + 'confirm password is:' + rePassword.value);
         } if (!validateFirstName() === true) {
-            return alert('first name is wrong');
+            alert('first name is wrong');
         } if (!validateLastName() === true) {
-            return alert('last name is wrong');
+            alert('last name is wrong');
         } if (!validateIdentificationDocument() === true) {
-            return alert('id is wrong');
+            alert('id is wrong');
         } if (!validatePhoneNumber() === true) {
-            return alert('phone number is wrong');
+            alert('phone number is wrong');
         } if (!validatePostalCode() === true) {
-            return alert('postal code is wrong');
+            alert('postal code is wrong');
         } if (!validateCity() === true) {
-            return alert('city is wrong');
+            alert('city is wrong');
         } if (!validateMail() === true) {
-            return alert('mail is wrong');
+            alert('mail is wrong');
         } if (!validateDateBirth() === true) {
-            return alert('date is wrong');
+            alert('date is wrong');
         } if (!validateAdrress() === true) {
-            return alert('address is wrong');
+            alert('address is wrong');
         } if (!validatePassword() === true) {
-            return alert('password is wrong');
+            alert('password is wrong');
+        }if (!validateRePassword() === true) {
+            alert('confirm password is wrong');
         } if (!validateIdvalidateRePasswordentificationDocument() === true) {
-            return alert('confirm password is wrong');
+            alert('confirm password is wrong');
         } 
         }
     }
