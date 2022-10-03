@@ -34,7 +34,7 @@ window.onload = function () {
         for(i=0; i<data.length ; i++){
             if ((numbers.includes(passwordInput[i]))){
             } else {
-            return false;
+                return false;
             }
         }
     }
@@ -76,29 +76,11 @@ window.onload = function () {
     submitButton.onclick = function(e) {
         e.preventDefault();
         if (validateMail() && validatePassword()) {
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+mailInput.value+ '&password=' 
-            +passwordInput.value)
-            .then(function(res){
-                return res.json();
-            })
-            .then(function(data){
-                if (!data.success) {
-                    throw new Error (data.msg + '\n' + 'success: ' + data.success);
-                } else {
-                    alert('\n' + 'success' + ' ' + data.success + '\n' + 'mail:' + ' ' + mailInput.value + '\n' + 'password:' + ' ' 
-                    + passwordInput.value + '\n' + 'request:' + ' ' + data.msg)
-                }
-            })
-            .catch(function(error){
-                alert(error);
-            })
-        
+            return alert('email is:' + ' ' + mailInput.value + ' ' + 'and\n' + 'password is:' + ' ' + passwordInput.value);
         } if (!validateMail() === true) {
             alert('email is wrong');
         } if (!validatePassword() === true) {
             alert('password is wrong')
-        } else {
-            
-        }
+        } 
     }
 }   
