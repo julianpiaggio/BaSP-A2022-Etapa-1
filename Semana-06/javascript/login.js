@@ -92,6 +92,7 @@ window.onload = function () {
             .catch(function(error){
                 alert(error);
             })
+        
         } if (!validateMail() === true) {
             alert('email is wrong');
         } if (!validatePassword() === true) {
