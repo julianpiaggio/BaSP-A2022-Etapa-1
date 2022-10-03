@@ -22,10 +22,10 @@ window.onload = function () {
     var paragraphErrorCity = document.createElement('p');
     var paragraphErrorPostalCode = document.createElement('p');
     var paragraphErrorMail = document.createElement('p');
-    var numbers=["0","1","2","3","4","5","6","7","8","9"];
     var letras="abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
-
-    function validateFirstName(texto){;
+    var dateBirthFinal;
+    
+    function validateFirstName(texto){
         texto = firstName.value;
         for(i=0; i<texto.length; i++){
             console.log()
@@ -53,7 +53,7 @@ window.onload = function () {
         firstName.classList.remove('greenBorder' , 'redBorder');
     }
 
-    function validateLastName(texto){;
+    function validateLastName(texto){
         texto = lastName.value;
         for(i=0; i<texto.length; i++){
             console.log()
@@ -208,6 +208,11 @@ window.onload = function () {
     function validateDateBirth () {
         var data = (dateBirth.value)
         if (data != '') {
+            var dateBirthModify = dateBirth.value.split('-');
+            var day = dateBirthModify[2];
+            var month = dateBirthModify[1];
+            var year = dateBirthModify[0];
+            dateBirthFinal = month + '/' + day + '/' + year;
             return true;
         } else {
             return false;
@@ -230,7 +235,7 @@ window.onload = function () {
         dateBirth.classList.remove('greenBorder' , 'redBorder');
     }
 
-    function validateLettersForAddress(texto){;
+    function validateLettersForAddress(texto){
         texto = address.value;
         for(i=0; i<texto.length - 1; i++){
             if (letras.indexOf(texto.charAt(i),0)!=-1){
@@ -250,29 +255,28 @@ window.onload = function () {
     }
 
     function validateAdrress () {
-    if (validateLettersForAddress() === true && validateNumbersForAddress() === true ) {
-        return true;
-    }
+        if (validateLettersForAddress() === true && validateNumbersForAddress() === true ) {
+            return true;
+        }
     }
     address.onblur = function() {
-    if (validateAdrress () === true)  {
-        address.classList.remove('redBorder');
-        address.classList.add('greenBorder');
-    } else {
-        paragraphErrorAddress.innerHTML = 'address is wrong';
-        address.parentNode.appendChild(paragraphErrorAddress);
-        paragraphErrorAddress.classList.add('redP');
-        address.classList.remove('greenBorder');
-        address.classList.add('redBorder');
-    } 
+        if (validateAdrress () === true)  {
+            address.classList.remove('redBorder');
+            address.classList.add('greenBorder');
+        } else {
+            paragraphErrorAddress.innerHTML = 'address is wrong';
+            address.parentNode.appendChild(paragraphErrorAddress);
+            paragraphErrorAddress.classList.add('redP');
+            address.classList.remove('greenBorder');
+            address.classList.add('redBorder');
+        } 
     }
     address.onfocus = function() {
-    paragraphErrorAddress.remove();
-    address.classList.remove('greenBorder' , 'redBorder');
+        paragraphErrorAddress.remove();
+        address.classList.remove('greenBorder' , 'redBorder');
     }
 
-
-    function validateLettersForPassword(texto){;
+    function validateLettersForPassword(texto){
         texto = password.value;
         for(i=0; i<texto.length; i++){
             console.log()
@@ -293,14 +297,13 @@ window.onload = function () {
     }
 
     function validatePassword () {
-        if ((validateLettersForPassword() === true || validateNumbersForPassword() === true) && password.value.length > 7) {
+        if ((validateLettersForPassword() === true && validateNumbersForPassword() === true) && password.value.length > 7) {
             return true;
         } else {
             return false;
         }
     }
     password.onblur = function() {
-        console.log('adsd');
         if (validatePassword () === true)  {
             password.classList.remove('redBorder');
             password.classList.add('greenBorder');
@@ -340,52 +343,57 @@ window.onload = function () {
         paragraphErrorRePassword.remove();
         rePassword.classList.remove('greenBorder' , 'redBorder');
     }
-
-    function validateEmpty (texto) {
-        if (texto === '') {
-            texto.classList.add('redBorder');
-            return true;
-        } else {
-            return false;
-        }
-    }
-
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];
     submitButton.onclick = function(e) {
         e.preventDefault();
-        if (validateFirstName() === true && validateLastName() === true && validateIdentificationDocument() === true 
-        && validatePhoneNumber() === true && validatePostalCode() === true && validateCity() === true 
-        && validateMail() === true && validateDateBirth() === true && validateAdrress() === true
-        && validatePassword() === true && validateRePassword() === true) {
-            return alert('first name is:' + ' ' + firstName.value + '\n' 
-            + 'last name is:' + ' ' + lastName.value + '\n' + 'id is:' + identificationDocument.value + '\n' + 'the number is:' 
-            + phoneNumber.value + '\n' +
-            'postal code:' + postalCode.value + '\n' + 'city is' + city.value + '\n' + 'email is:' + mailInput.value + '\n' 
-            + 'date of birth is:' + dateBirth.value + '\n' + 'address is:' + address.value + '\n' + 'password is:' + password.value + '\n' + 'confirm password is:' + rePassword.value);
+        if (validateFirstName() && validateLastName() && validateIdentificationDocument() && validatePhoneNumber()
+        && validatePostalCode() && validateCity() && validateMail() && validateDateBirth() && validateAdrress()
+        && validatePassword() && validateRePassword()) {
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+firstName.value+ '&lastName=' 
+            +lastName.value+ '&dni=' +identificationDocument.value+ '&phone=' 
+            +phoneNumber.value+ '&zip=' +postalCode.value+ '&city=' +city.value+ '&email=' +mailInput.value+
+            '&dob=' +dateBirthFinal+ '&address=' +address.value+ '&password=' +password.value+ '&rePassword=' +rePassword.value)
+        .then(function(res){
+            return res.json();
+        })
+        .then(function(data){
+            console.log(data);
+            if (!data.success) {
+                throw new Error (data.msg + '\n' + 'success: ' + data.success);
+            } else {
+                alert('\n' + 'success' + ' ' + data.success + '\n' + 'first name:' + ' ' + firstName.value + '\n' 
+                + 'last name:' + ' ' + lastName.value + '\n' + 'id:' + ' ' + identificationDocument.value + '\n' +
+                'the number:' + ' ' + phoneNumber.value + '\n' + 'postal code:' + ' ' + postalCode.value + '\n' + 
+                'city:' + ' ' + city.value + '\n' + 'email:' + ' ' + mailInput.value + '\n' + 'date of birth:' + ' '
+                + dateBirthFinal + '\n' + 'address:' + ' ' + address.value + '\n' + 'password:' + ' ' + password.value 
+                + '\n' + 'confirm password:' + ' ' + rePassword.value + '\n' +  'request:' + ' ' + data.msg)
+            }
+        })
+        .catch(function(error){
+            alert(error);
+        })
         } if (!validateFirstName() === true) {
-            alert('first name is wrong');
+            return alert('first name is wrong');
         } if (!validateLastName() === true) {
-            alert('last name is wrong');
+            return alert('last name is wrong');
         } if (!validateIdentificationDocument() === true) {
-            alert('id is wrong');
+            return alert('id is wrong');
         } if (!validatePhoneNumber() === true) {
-            alert('phone number is wrong');
+            return alert('phone number is wrong');
         } if (!validatePostalCode() === true) {
-            alert('postal code is wrong');
+            return alert('postal code is wrong');
         } if (!validateCity() === true) {
-            alert('city is wrong');
+            return alert('city is wrong');
         } if (!validateMail() === true) {
-            alert('mail is wrong');
+            return alert('mail is wrong');
         } if (!validateDateBirth() === true) {
-            alert('date is wrong');
+            return alert('date is wrong');
         } if (!validateAdrress() === true) {
-            alert('address is wrong');
+            return alert('address is wrong');
         } if (!validatePassword() === true) {
-            alert('password is wrong');
-        }if (!validateRePassword() === true) {
-            alert('confirm password is wrong');
-        } if (!validateIdvalidateRePasswordentificationDocument() === true) {
-            alert('confirm password is wrong');
+            return alert('password is wrong');
+        } if (!validateRePassword() === true) {
+            return alert('confirm password is wrong');
         } 
         }
     }
