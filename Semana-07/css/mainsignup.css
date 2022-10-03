@@ -1,0 +1,97 @@
+.iconProfile {
+    height: 10%;
+    width: 10%;
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 0% 10%;
+    margin-top: 100px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);;
+    background-color: rgba(159, 159, 168, 0.2);
+}
+
+.inputSignUp {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.containerTitle {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.supportSectionButtonStyle {
+    width: 100%;
+    margin: 50px auto;
+    padding: 5px 0px;
+    border-radius: 16px;
+    text-align: center;
+    background-color: #49A37B;
+    color: white;
+    font-size: 1rem;
+}
+.supportSectionButtonStyle a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main input {
+    height: 25px;
+    border-radius: 10px;
+}
+
+.greenBorder {
+    border: solid 1px green;
+}
+
+.redBorder {
+    border: solid 1px red;
+}
+
+.redP {
+    font-size: 10px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    main {
+        flex: 70%;
+        margin-left: 30%;
+        margin-top: 15%;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .inputSignUp {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        margin-top: 20px;
+    }
+    .supportSectionButtonStyle {
+        width: 70%;
+        
+    }
+}

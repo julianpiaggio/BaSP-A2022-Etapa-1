@@ -22,6 +22,7 @@ window.onload = function () {
     var paragraphErrorCity = document.createElement('p');
     var paragraphErrorPostalCode = document.createElement('p');
     var paragraphErrorMail = document.createElement('p');
+    var numbers=["0","1","2","3","4","5","6","7","8","9"];
     var letras="abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
     function validateFirstName(texto){;

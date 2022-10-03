@@ -1,0 +1,42 @@
+aside {
+    display: none;
+    position: fixed;
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 67.2px;
+    background-color: rgba(159, 159, 168, 0.5);
+}
+aside ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+}
+aside ul a {
+    text-decoration: none;
+    color:#46A07B;
+    font-size: 1rem;
+}
+.subtitleAside {
+    color: black;
+    font-size: 1.5rem;
+    margin-top: 16px;
+} 
+aside p {
+    font-size: 0.6rem;
+}
+aside img {
+    width: 30%;
+    margin: 40% auto 0% auto;
+}
+
+
+@media (min-width: 768px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+    }
+}

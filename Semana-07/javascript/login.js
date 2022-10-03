@@ -5,12 +5,13 @@ window.onload = function () {
     var paragraphErrorMail = document.createElement('p');
     var paragraphErrorPassword = document.createElement('p');
     var numbers=["0","1","2","3","4","5","6","7","8","9"];
+    var letras="abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
 
     function validateMail () {
         if (emailExpression.test(mailInput.value)) {
             return true;
-        } else {
-            return false;
+            } else {
+                return false;
         }
     }
     mailInput.onblur = function() {
@@ -29,28 +30,28 @@ window.onload = function () {
         paragraphErrorMail.remove();
         mailInput.classList.remove('greenBorder' , 'redBorder');
     }
-    function validateNumbers(){
-        var data = (passwordInput.value);
-        for(i=0; i<data.length ; i++){
-            if ((numbers.includes(passwordInput[i]))){
-            } else {
-            return false;
+    function validateLettersForPassword(texto){;
+    texto = passwordInput.value;
+        for(i=0; i<texto.length; i++){
+            console.log()
+            if (letras.indexOf(texto.charAt(i),0)!=-1 && texto.length > 3){
+            return true;
             }
         }
+        return false;
     }
-    
-    function validateLetters() {
+
+    function validateNumbersForPassword (){
         var data = (passwordInput.value);
-        for(var i=0 ; i < data.length ; i++){
-            if(data[i].toUpperCase() != data[i].toLowerCase()){
-                return true;
-            } else {
-                return false;
-            }
+        if (!isNaN(data[data.length - 1]) ) {
+            return true;
+        } else {
+        return false;
         }
     }
+
     function validatePassword () {
-        if ((validateLetters() === true && validateNumbers() !== true) && passwordInput.value.length > 7) {
+        if ((validateLettersForPassword() === true || validateNumbersForPassword() === true) && passwordInput.value.length > 7) {
             return true;
         } else {
             return false;
@@ -75,29 +76,40 @@ window.onload = function () {
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];
     submitButton.onclick = function(e) {
         e.preventDefault();
-        if (validateMail() && validatePassword()) {
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/login?email='+mailInput.value+ '&password=' 
-            +passwordInput.value)
-            .then(function(res){
-                return res.json();
-            })
-            .then(function(data){
-                if (!data.success) {
-                    throw new Error (data.msg + '\n' + 'success: ' + data.success);
-                } else {
-                    alert('\n' + 'success' + ' ' + data.success + '\n' + 'mail:' + ' ' + mailInput.value + '\n' + 'password:' + ' ' 
-                    + passwordInput.value + '\n' + 'request:' + ' ' + data.msg)
-                }
-            })
-            .catch(function(error){
-                alert(error);
-            })
+        if (validateMail() === true && validatePassword() === true) {
+            return alert('email is:' + ' ' + mailInput.value + ' ' + 'and\n' + 'password is:' + ' ' + passwordInput.value );
         } if (!validateMail() === true) {
             alert('email is wrong');
         } if (!validatePassword() === true) {
             alert('password is wrong')
-        } else {
-            
         }
     }
-}   
+
+}
+
+var mailInput = document.getElementById('mailInput');
+var passwordInput = document.getElementById('passwordInput');
+
+fetch("https://basp-m2022-api-rest-server.herokuapp.com/login?email=" +mailInput+ "&password=" +passwordInput)
+    .them(function (res) {
+        return res.json();
+    })
+    .them(function (data) {
+        return data.json();
+    })
+    .catch(function(error) {
+        return console.log(error);
+    })
+
+
+
+// fetch ('https://basp-m2022-api-rest-server.herokuapp.com/login?email=' +mailInput+ '&password=' +passwordInput)
+//     .them(function (res) {
+//         return res.json();
+//     })
+//     .them(function (data) {
+//         return data.json();
+//     })
+//     .catch(function(error) {
+//         return console.log(error);
+//     })
