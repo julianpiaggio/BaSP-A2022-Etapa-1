@@ -100,9 +100,6 @@ window.onload = function () {
                             modal.style.display = "none";
                         }
                     }
-                    
-                    // alert('\n' + 'success' + ' ' + data.success + '\n' + 'mail:' + ' ' + mailInput.value + '\n' + 'password:' + ' ' 
-                    // + passwordInput.value + '\n' + 'request:' + ' ' + data.msg)
             }
         })
         .catch(function(error){
