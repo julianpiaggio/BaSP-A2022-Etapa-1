@@ -5,7 +5,7 @@ window.onload = function () {
     var address = document.getElementById('address');
     var password = document.getElementById('password');
     var rePassword = document.getElementById('rePassword');
-    var identificationDocument = document.getElementById('identificationDocument'); // ✔
+    var dni = document.getElementById('dni'); // ✔
     var dateBirth = document.getElementById('dateBirth');
     var city = document.getElementById('city'); // ✔
     var postalCode = document.getElementById('postalCode'); // ✔
@@ -17,14 +17,36 @@ window.onload = function () {
     var paragraphErrorAddress = document.createElement('p');
     var paragraphErrorPassword = document.createElement('p');
     var paragraphErrorRePassword = document.createElement('p');
-    var paragraphErrorIdentificationDocument = document.createElement('p');
+    var paragraphErrorDni = document.createElement('p');
     var paragraphErrorDate = document.createElement('p');
     var paragraphErrorCity = document.createElement('p');
     var paragraphErrorPostalCode = document.createElement('p');
     var paragraphErrorMail = document.createElement('p');
     var letras="abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
     var dateBirthFinal;
-    
+    var firstNameLocalStorage = localStorage.getItem('name')
+    var lastNameLocalStorage = localStorage.getItem('lastName')
+    var phoneNumberLocalStorage = localStorage.getItem('phone')
+    var addressLocalStorage = localStorage.getItem('address')
+    var passwordLocalStorage = localStorage.getItem('password')
+    var rePasswordLocalStorage = localStorage.getItem('rePassword')
+    var dniLocalStorage = localStorage.getItem('dni')
+    var dateBirthLocalStorage = localStorage.getItem('dob')
+    var cityLocalStorage = localStorage.getItem('city')
+    var postalCodeLocalStorage = localStorage.getItem('zip')
+    var mailInputLocalStorage = localStorage.getItem('email')
+    firstName.value = firstNameLocalStorage;
+    lastName.value = lastNameLocalStorage
+    phoneNumber.value = phoneNumberLocalStorage;
+    address.value = addressLocalStorage;
+    password.value = passwordLocalStorage;
+    rePassword.value = rePasswordLocalStorage;
+    dni.value = dniLocalStorage;
+    dateBirth.value = dateBirthLocalStorage;
+    city.value = cityLocalStorage;
+    postalCode.value = postalCodeLocalStorage;
+    mailInput.value = mailInputLocalStorage;
+
     function validateFirstName(texto){
         texto = firstName.value;
         for(i=0; i<texto.length; i++){
@@ -35,7 +57,6 @@ window.onload = function () {
         }
         return false;
     }
-
     firstName.onblur = function() {
         if (validateFirstName() === true) {
             firstName.classList.remove('redBorder');
@@ -52,8 +73,8 @@ window.onload = function () {
         paragraphErrorFirstName.remove();
         firstName.classList.remove('greenBorder' , 'redBorder');
     }
-
-    function validateLastName(texto){
+    
+    function validateLastName(texto){;
         texto = lastName.value;
         for(i=0; i<texto.length; i++){
             console.log()
@@ -79,29 +100,30 @@ window.onload = function () {
         paragraphErrorLastName.remove();
         lastName.classList.remove('greenBorder' , 'redBorder');
     }
-    function validateIdentificationDocument (){
-        var data = (identificationDocument.value);
+
+    function validateDni (){
+        var data = (dni.value);
         if (!isNaN(data) && data.length > 7){
             return true;
         } else {
             return false;
         }
     }
-    identificationDocument.onblur = function() {
-        if (validateIdentificationDocument() === true) {
-            identificationDocument.classList.remove('redBorder');
-            identificationDocument.classList.add('greenBorder');
+    dni.onblur = function() {
+        if (validateDni() === true) {
+            dni.classList.remove('redBorder');
+            dni.classList.add('greenBorder');
         } else {
-            paragraphErrorIdentificationDocument.innerHTML = ' the id is wrong';
-            identificationDocument.parentNode.appendChild(paragraphErrorIdentificationDocument);
-            paragraphErrorIdentificationDocument.classList.add('redP');
-            identificationDocument.classList.remove('greenBorder');
-            identificationDocument.classList.add('redBorder');
+            paragraphErrorDni.innerHTML = ' the id is wrong';
+            dni.parentNode.appendChild(paragraphErrorDni);
+            paragraphErrorDni.classList.add('redP');
+            dni.classList.remove('greenBorder');
+            dni.classList.add('redBorder');
         }
     }
-    identificationDocument.onfocus = function() {
-        paragraphErrorIdentificationDocument.remove();
-        identificationDocument.classList.remove('greenBorder' , 'redBorder');
+    dni.onfocus = function() {
+        paragraphErrorDni.remove();
+        dni.classList.remove('greenBorder' , 'redBorder');
     }
     
     function validatePhoneNumber (){
@@ -235,7 +257,7 @@ window.onload = function () {
         dateBirth.classList.remove('greenBorder' , 'redBorder');
     }
 
-    function validateLettersForAddress(texto){
+    function validateLettersForAddress(texto){;
         texto = address.value;
         for(i=0; i<texto.length - 1; i++){
             if (letras.indexOf(texto.charAt(i),0)!=-1){
@@ -296,6 +318,7 @@ window.onload = function () {
         }
     }
 
+
     function validatePassword () {
         if ((validateLettersForPassword() === true && validateNumbersForPassword() === true) && password.value.length > 7) {
             return true;
@@ -343,14 +366,15 @@ window.onload = function () {
         paragraphErrorRePassword.remove();
         rePassword.classList.remove('greenBorder' , 'redBorder');
     }
+
     var submitButton = document.getElementsByClassName('supportSectionButtonStyle')[0];
     submitButton.onclick = function(e) {
         e.preventDefault();
-        if (validateFirstName() && validateLastName() && validateIdentificationDocument() && validatePhoneNumber()
+        if (validateFirstName() && validateLastName() && validateDni() && validatePhoneNumber()
         && validatePostalCode() && validateCity() && validateMail() && validateDateBirth() && validateAdrress()
         && validatePassword() && validateRePassword()) {
             fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+firstName.value+ '&lastName=' 
-            +lastName.value+ '&dni=' +identificationDocument.value+ '&phone=' 
+            +lastName.value+ '&dni=' +dni.value+ '&phone=' 
             +phoneNumber.value+ '&zip=' +postalCode.value+ '&city=' +city.value+ '&email=' +mailInput.value+
             '&dob=' +dateBirthFinal+ '&address=' +address.value+ '&password=' +password.value+ '&rePassword=' +rePassword.value)
         .then(function(res){
@@ -361,12 +385,23 @@ window.onload = function () {
             if (!data.success) {
                 throw new Error (data.msg + '\n' + 'success: ' + data.success);
             } else {
-                alert('\n' + 'success' + ' ' + data.success + '\n' + 'first name:' + ' ' + firstName.value + '\n' 
-                + 'last name:' + ' ' + lastName.value + '\n' + 'id:' + ' ' + identificationDocument.value + '\n' +
-                'the number:' + ' ' + phoneNumber.value + '\n' + 'postal code:' + ' ' + postalCode.value + '\n' + 
-                'city:' + ' ' + city.value + '\n' + 'email:' + ' ' + mailInput.value + '\n' + 'date of birth:' + ' '
-                + dateBirthFinal + '\n' + 'address:' + ' ' + address.value + '\n' + 'password:' + ' ' + password.value 
-                + '\n' + 'confirm password:' + ' ' + rePassword.value + '\n' +  'request:' + ' ' + data.msg)
+                alert('\n' + 'success:' + ' ' + data.success + '\n' + 'first name:' + ' ' + firstName.value + '\n' 
+                + 'last name:' + ' ' + lastName.value + '\n' + 'dni:' + dni.value + '\n' + 'the number:' 
+                + phoneNumber.value + '\n' + 'postal code:' + postalCode.value + '\n' + 'city:' + city.value + '\n'
+                + 'email:' + mailInput.value + '\n' + 'date of birth:' + dateBirthFinal + '\n' + 'address:' 
+                + address.value + '\n' + 'password:' + password.value + '\n' + 'confirm password:' 
+                + rePassword.value + '\n' +  'request:' + ' ' + data.msg)
+                localStorage.setItem('name',firstName.value);
+                localStorage.setItem('lastName',lastName.value);
+                localStorage.setItem('phone',phoneNumber.value);
+                localStorage.setItem('address',address.value);
+                localStorage.setItem('password',password.value);
+                localStorage.setItem('rePassword',password.value);
+                localStorage.setItem('dni',dni.value);
+                localStorage.setItem('dob',dateBirth.value);
+                localStorage.setItem('city',city.value);
+                localStorage.setItem('zip',postalCode.value);
+                localStorage.setItem('email',mailInput.value);
             }
         })
         .catch(function(error){
@@ -376,7 +411,7 @@ window.onload = function () {
             return alert('first name is wrong');
         } if (!validateLastName() === true) {
             return alert('last name is wrong');
-        } if (!validateIdentificationDocument() === true) {
+        } if (!validateDni() === true) {
             return alert('id is wrong');
         } if (!validatePhoneNumber() === true) {
             return alert('phone number is wrong');

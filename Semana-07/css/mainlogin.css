@@ -80,8 +80,9 @@ form input {
     color: red;
 }
 
-.buttonBackRef {
+.buttons a {
     text-decoration: none;
+    color: white;
 }
 
 main {
