@@ -376,7 +376,7 @@ window.onload = function () {
         if (validateFirstName() && validateLastName() && validateDni() && validatePhoneNumber()
         && validatePostalCode() && validateCity() && validateMail() && validateDateBirth() && validateAdrress()
         && validatePassword() && validateRePassword()) {
-            fetch('https://basp-m2022-api-rest-server.herokuap.com/signup?name='+firstName.value+ '&lastName=' 
+            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+firstName.value+ '&lastName=' 
             +lastName.value+ '&dni=' +dni.value+ '&phone=' 
             +phoneNumber.value+ '&zip=' +postalCode.value+ '&city=' +city.value+ '&email=' +mailInput.value+
             '&dob=' +dateBirthFinal+ '&address=' +address.value+ '&password=' +password.value+ '&rePassword=' +rePassword.value)
