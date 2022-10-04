@@ -22,6 +22,9 @@ window.onload = function () {
     var paragraphErrorCity = document.createElement('p');
     var paragraphErrorPostalCode = document.createElement('p');
     var paragraphErrorMail = document.createElement('p');
+    var paragraphError = document.getElementById('paragraphError');
+    var modal = document.getElementById("myModal");
+    var span = document.getElementsByClassName("close")[0];
     var letras="abcdefghyjklmnñopqrstuvwxyzABCDEFGHIJKLMNÑOPQRSTUVWXYZ";
     var dateBirthFinal;
     var firstNameLocalStorage = localStorage.getItem('name')
@@ -373,7 +376,7 @@ window.onload = function () {
         if (validateFirstName() && validateLastName() && validateDni() && validatePhoneNumber()
         && validatePostalCode() && validateCity() && validateMail() && validateDateBirth() && validateAdrress()
         && validatePassword() && validateRePassword()) {
-            fetch('https://basp-m2022-api-rest-server.herokuapp.com/signup?name='+firstName.value+ '&lastName=' 
+            fetch('https://basp-m2022-api-rest-server.herokuap.com/signup?name='+firstName.value+ '&lastName=' 
             +lastName.value+ '&dni=' +dni.value+ '&phone=' 
             +phoneNumber.value+ '&zip=' +postalCode.value+ '&city=' +city.value+ '&email=' +mailInput.value+
             '&dob=' +dateBirthFinal+ '&address=' +address.value+ '&password=' +password.value+ '&rePassword=' +rePassword.value)
@@ -385,12 +388,21 @@ window.onload = function () {
             if (!data.success) {
                 throw new Error (data.msg + '\n' + 'success: ' + data.success);
             } else {
-                alert('\n' + 'success:' + ' ' + data.success + '\n' + 'first name:' + ' ' + firstName.value + '\n' 
-                + 'last name:' + ' ' + lastName.value + '\n' + 'dni:' + dni.value + '\n' + 'the number:' 
-                + phoneNumber.value + '\n' + 'postal code:' + postalCode.value + '\n' + 'city:' + city.value + '\n'
-                + 'email:' + mailInput.value + '\n' + 'date of birth:' + dateBirthFinal + '\n' + 'address:' 
-                + address.value + '\n' + 'password:' + password.value + '\n' + 'confirm password:' 
-                + rePassword.value + '\n' +  'request:' + ' ' + data.msg)
+                modal.style.display = "block";
+                    paragraphError.innerText = '\n' + 'success:' + ' ' + data.success + '\n' + 'first name:' + ' ' + firstName.value + '\n' 
+                    + 'last name:' + ' ' + lastName.value + '\n' + 'dni:' + dni.value + '\n' + 'the number:' 
+                    + phoneNumber.value + '\n' + 'postal code:' + postalCode.value + '\n' + 'city:' + city.value + '\n'
+                    + 'email:' + mailInput.value + '\n' + 'date of birth:' + dateBirthFinal + '\n' + 'address:' 
+                    + address.value + '\n' + 'password:' + password.value + '\n' + 'confirm password:' 
+                    + rePassword.value + '\n' +  'request:' + ' ' + data.msg
+                    span.onclick = function() {
+                    modal.style.display = "none";
+                    }
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
                 localStorage.setItem('name',firstName.value);
                 localStorage.setItem('lastName',lastName.value);
                 localStorage.setItem('phone',phoneNumber.value);
@@ -405,7 +417,16 @@ window.onload = function () {
             }
         })
         .catch(function(error){
-            alert(error);
+            modal.style.display = "block";
+                    paragraphError.innerText = error;
+                    span.onclick = function() {
+                    modal.style.display = "none";
+                    }
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    };
         })
         } if (!validateFirstName() === true) {
             return alert('first name is wrong');
