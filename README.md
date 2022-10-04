@@ -23,6 +23,8 @@ We are a serious company that focuses on providing solutions to the various prob
 
     >   [Week 6](#week-6-🕐)
 
+    >   [Week 7](#week-7-🕐)
+
 - [Download](#download)
 
 
@@ -49,6 +51,12 @@ The technologies applied so far are:
 
 > ☑ DOM
 
+> ☑ HTTP REQUEST
+
+> ☑ FETCH
+
+> ☑ LOCAL STORAGE
+
 ### Week
 In this section, the content that is acquired will be uploaded and will be divided into weeks.
 
@@ -69,6 +77,9 @@ In week 5 we work with the principles of javascript. We start to create variable
 
 ### Week 6 🕐
 in week 6 we continue working with javascript, we got to know and work on the dom to create elements, modify them, validate forms for those data that the user needs to enter.
+
+### Week 7 🕐
+in week 7 we learned how to send requests to servers and receive responses from them. We also apply the use of promises and fetch for server responses. On the other hand, to save validations and then return them, we use the setItem and getItem properties of local storage.
 
 ### Download
 If you like our way of working and you are interested in replicating it, what you have to do is clone this remote repository on github or you can see it directly with this link that I leave below. Link https://julianpiaggio.github.io/BaSP-A2022-Etapa-1/Semana-04/index.html

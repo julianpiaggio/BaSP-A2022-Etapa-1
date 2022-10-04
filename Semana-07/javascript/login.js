@@ -5,7 +5,24 @@ window.onload = function () {
     var paragraphErrorMail = document.createElement('p');
     var paragraphErrorPassword = document.createElement('p');
     var numbers=["0","1","2","3","4","5","6","7","8","9"];
+    var modal = document.getElementById("myModal");
+    var btn = document.getElementById("myBtn");
+    var span = document.getElementsByClassName("close")[0];
 
+
+    btn.onclick = function() {
+    modal.style.display = "block";
+    }
+
+    span.onclick = function() {
+    modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
     function validateMail () {
         if (emailExpression.test(mailInput.value)) {
             return true;
